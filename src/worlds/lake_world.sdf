@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+
+<world name="lake_world">
+
+  <include>
+    <uri>model://sun</uri>
+  </include>
+
+  <!-- Water Surface -->
+  <model name="lake_surface">
+
+    <static>true</static>
+
+    <link name="water">
+
+      <visual name="water_visual">
+
+        <geometry>
+          <box>
+            <size>50 50 0.1</size>
+          </box>
+        </geometry>
+
+        <material>
+          <ambient>0.2 0.5 0.8 1</ambient>
+          <diffuse>0.2 0.5 0.8 1</diffuse>
+        </material>
+
+      </visual>
+
+    </link>
+
+  </model>
+
+  <!-- Plastic Bottle 1 -->
+  <model name="bottle1">
+    <pose>3 2 0.1 0 0 0</pose>
+
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.25</length>
+          </cylinder>
+        </geometry>
+
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+        </material>
+
+      </visual>
+    </link>
+  </model>
+
+  <!-- Plastic Bottle 2 -->
+  <model name="bottle2">
+    <pose>-4 3 0.1 0 0 0</pose>
+
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.25</length>
+          </cylinder>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+
+  <!-- Wooden Debris -->
+  <model name="wood_piece">
+
+    <pose>5 -3 0.1 0 0 0.5</pose>
+
+    <link name="link">
+
+      <visual name="visual">
+
+        <geometry>
+          <box>
+            <size>1 0.2 0.1</size>
+          </box>
+        </geometry>
+
+        <material>
+          <ambient>0.5 0.3 0.1 1</ambient>
+          <diffuse>0.5 0.3 0.1 1</diffuse>
+        </material>
+
+      </visual>
+
+    </link>
+
+  </model>
+
+  <!-- Algae Patch 1 -->
+  <model name="algae1">
+
+    <pose>-3 -2 0.05 0 0 0</pose>
+
+    <link name="link">
+
+      <visual name="visual">
+
+        <geometry>
+          <cylinder>
+            <radius>1</radius>
+            <length>0.02</length>
+          </cylinder>
+        </geometry>
+
+        <material>
+          <ambient>0 0.6 0 1</ambient>
+          <diffuse>0 0.6 0 1</diffuse>
+        </material>
+
+      </visual>
+
+    </link>
+
+  </model>
+
+  <!-- Algae Patch 2 -->
+  <model name="algae2">
+
+    <pose>-7 -4 0.05 0 0 0</pose>
+
+    <link name="link">
+
+      <visual name="visual">
+
+        <geometry>
+          <cylinder>
+            <radius>1.5</radius>
+            <length>0.02</length>
+          </cylinder>
+        </geometry>
+
+        <material>
+          <ambient>0 0.5 0 1</ambient>
+          <diffuse>0 0.5 0 1</diffuse>
+        </material>
+
+      </visual>
+
+    </link>
+
+  </model>
+
+  <!-- Garbage Cluster -->
+
+  <model name="garbage_cluster">
+
+    <pose>8 4 0.1 0 0 0</pose>
+
+    <link name="link">
+
+      <visual name="visual">
+
+        <geometry>
+          <box>
+            <size>1.5 1.5 0.2</size>
+          </box>
+        </geometry>
+
+        <material>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.3 0.3 0.3 1</diffuse>
+        </material>
+
+      </visual>
+
+    </link>
+
+  </model>
+
+</world>
+
+</sdf>
