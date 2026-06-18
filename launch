@@ -13,28 +13,17 @@ editing file
 
 
 Launching Gazebo
-step1:
-killall -9 gzserver
-killall -9 gzclient
-
-Now:
-
+Step 1 — Remove the duplicate (keep only the one directly in src/)
+rm -rf ~/ros2_ws/src/aqua_waste_robot
+Step 2 — Build now
 cd ~/ros2_ws
+colcon build --packages-select aqua_robot_gazebo
 source install/setup.bash
-ros2 launch my_robot_description gazebo.launch.py
+Step 3 — Launch
+export LIBGL_ALWAYS_SOFTWARE=1
+export MESA_GL_VERSION_OVERRIDE=3.3
+ros2 launch aqua_robot_gazebo lake_simulation.launch.py
 
-
-If Gazebo says "Address already in use"
-
-Run:
-
-killall -9 gzserver
-killall -9 gzclient
-pkill -9 -f gazebo
-
-Then launch again:
-
-ros2 launch my_robot_description gazebo.launch.py
 
 Step 5: Verify Robot Exists
 In a new terminal:
