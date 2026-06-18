@@ -1,2 +1,2 @@
 # proj1
-Autoomous waste detection robot 
+Autonomous waste detection robot 
