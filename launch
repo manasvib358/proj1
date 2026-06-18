@@ -2,13 +2,10 @@ launching RVIZ
 Step 0: Open a new terminal
 cd ~/ros2_ws
 source install/setup.bash
-
 Step 1: Check that ROS sees your package
-ros2 pkg list | grep my_robot_description
-
+ros2 pkg list | grep aqua_robot_gazebo
 Step 2: Launch RViz
-ros2 launch my_robot_description display.launch.py
-
+ros2 launch aqua_robot_gazebo lake_simulation.launch.py
 editing file 
 
 
@@ -27,14 +24,11 @@ ros2 launch aqua_robot_gazebo lake_simulation.launch.py
 
 Step 5: Verify Robot Exists
 In a new terminal:
-
 cd ~/ros2_ws
 source install/setup.bash
 
 ros2 topic list
-
 You should see ROS topics from your robot.
-
 
 opening sdf file
 nano ~/ros2_ws/src/aqua_robot_gazebo/worlds/lake_waste.world
