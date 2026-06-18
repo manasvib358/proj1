@@ -35,3 +35,7 @@ ros2 topic list
 
 You should see ROS topics from your robot.
 
+
+opening sdf file
+nano ~/ros2_ws/src/aqua_robot_gazebo/worlds/lake_waste.world
+
