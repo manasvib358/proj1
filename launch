@@ -30,6 +30,8 @@ source install/setup.bash
 ros2 topic list
 You should see ROS topics from your robot.
 
-opening sdf file
+opening world sdf file
 nano ~/ros2_ws/src/aqua_robot_gazebo/worlds/lake_waste.world
+opening robots sdf
+nano ~/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation.launch.py
 
