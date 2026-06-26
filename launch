@@ -38,3 +38,25 @@ opening robot urdf file
 nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf
 
 ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf  spawning robot file 
+
+
+
+
+camera setup 
+sudo apt update
+sudo apt install ros-humble-rqt-image-view
+
+source /opt/ros/humble/setup.bash
+rqt_image_view
+
+The package is installed, but the executable isn't being found. Let's diagnose it.
+Please run these commands one by one and paste all the outputs:
+
+which rqt
+which rqt_image_view
+dpkg -L ros-humble-rqt-image-view | grep bin
+dpkg -L ros-humble-rqt-image-view
+There's also a good chance you're launching it the wrong way.
+
+Try:
+rqt
