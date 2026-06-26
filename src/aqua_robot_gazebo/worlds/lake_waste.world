@@ -97,27 +97,40 @@
     <!-- ============================================================ -->
     <!--  WATER SURFACE  (large semi-transparent blue plane at z=0)    -->
     <!-- ============================================================ -->
-    <model name="water_surface">
-      <static>true</static>
-      <pose>0 0 0 0 0 0</pose>
-      <link name="link">
-        <visual name="visual">
-          <geometry>
-            <box><size>70 70 -0.05</size></box>
-          </geometry>
-          <material>
-            <ambient>0.05 0.25 0.45 0.75</ambient>
-            <diffuse>0.08 0.35 0.60 0.75</diffuse>
-            <specular>0.8 0.9 1.0 0.9</specular>
-            <emissive>0.02 0.06 0.10 0</emissive>
-          </material>
-          <transparency>0.35</transparency>
-          <cast_shadows>false</cast_shadows>
-        </visual>
-        <!-- No collision: robot floats on its own buoyancy plugin -->
-      </link>
-    </model>
+<model name="water_surface">
+  <static>true</static>
+  <pose>0 0 0 0 0 0</pose>
 
+  <link name="link">
+
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>70 70 0.05</size>
+        </box>
+      </geometry>
+    </collision>
+
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>70 70 0.05</size>
+        </box>
+      </geometry>
+
+      <material>
+        <ambient>0.05 0.25 0.45 0.75</ambient>
+        <diffuse>0.08 0.35 0.60 0.75</diffuse>
+        <specular>0.8 0.9 1.0 0.9</specular>
+        <emissive>0.02 0.06 0.10 0</emissive>
+      </material>
+
+      <transparency>0.35</transparency>
+      <cast_shadows>false</cast_shadows>
+    </visual>
+
+  </link>
+</model>
     <!-- ============================================================ -->
     <!--  WAVE RIPPLE PATCHES  (slightly elevated transparent planes   -->
     <!--  scattered to fake wave highlights)                            -->

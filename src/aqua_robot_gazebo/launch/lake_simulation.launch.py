@@ -46,7 +46,7 @@ def generate_launch_description():
         DeclareLaunchArgument('gui', default_value='true'),
         DeclareLaunchArgument('robot_x', default_value='0.0'),
         DeclareLaunchArgument('robot_y', default_value='0.0'),
-        DeclareLaunchArgument('robot_z', default_value='0.3'),
+        DeclareLaunchArgument('robot_z', default_value='0.04'),
     ]
 
     use_sim_time   = LaunchConfiguration('use_sim_time')
@@ -100,15 +100,26 @@ def generate_launch_description():
              'use_sim_time': use_sim_time}
         ],
     )
+    spawn_robot = TimerAction(
+        period=3.0,
+        actions=[
+            Node(
+                package='gazebo_ros',
+                executable='spawn_entity.py',
+                arguments=[
+                    '-entity', 'aqua_robot',
+                    '-topic', 'robot_description',
+                    '-x', robot_x,
+                    '-y', robot_y,
+                    '-z', robot_z,
+                ],
+                output='screen',
+            )
+        ],
+    )
 
     # ----------------------------------------------------------------
-    # 4. Spawn robot entity into Gazebo (delayed 3 s for Gazebo to boot)
-    # ----------------------------------------------------------------
-    
-
-    # ----------------------------------------------------------------
-    # 5. Joint State Publisher (publishes dummy joint states for fixed
-    #    joints so RViz2 doesn't complain)
+    # 5. Joint State Publisher
     # ----------------------------------------------------------------
     joint_state_publisher = Node(
         package='joint_state_publisher',
@@ -142,6 +153,7 @@ def generate_launch_description():
             gazebo_server,
             gazebo_client,
             robot_state_publisher,
+            spawn_robot,
             joint_state_publisher,
             rviz2,
         ]

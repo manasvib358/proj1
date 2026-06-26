@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+  Entry point for ONE robot. The fleet launch file calls `xacro` on this
+  file three times, each time overriding robot_name/color_r/color_g/color_b
+  via the command line, e.g.:
+
+    xacro asv_robot.xacro robot_name:=red_asv color_r:=1.0 color_g:=0.0 color_b:=0.0
+
+  This keeps one single source of truth (asv_macro.xacro) for the robot's
+  shape/sensors instead of three near-duplicate URDF files that would
+  drift out of sync the moment you tweak one of them.
+-->
+<robot name="asv" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:arg name="robot_name" default="asv"/>
+  <xacro:arg name="color_r" default="0.8"/>
+  <xacro:arg name="color_g" default="0.8"/>
+  <xacro:arg name="color_b" default="0.8"/>
+
+  <xacro:include filename="$(find asv_fleet)/urdf/asv_macro.xacro"/>
+
+  <xacro:asv robot_name="$(arg robot_name)"
+             color_r="$(arg color_r)"
+             color_g="$(arg color_g)"
+             color_b="$(arg color_b)"/>
+
+</robot>

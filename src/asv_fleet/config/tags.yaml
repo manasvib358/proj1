@@ -1,0 +1,22 @@
+# Config for apriltag_ros, used by launch/apriltag_detection.launch.py
+#
+# NOTE: apriltag_ros has changed its parameter schema across versions.
+# This matches the common ROS2 port (continuous_detector / apriltag_node
+# style). If `ros2 launch asv_fleet apriltag_detection.launch.py` errors
+# about unknown parameters, run:
+#     ros2 pkg prefix apriltag_ros
+#     ros2 interface show apriltag_msgs/msg/AprilTagDetection
+# and diff this file against the example config that ships with your
+# installed version (usually under
+# /opt/ros/humble/share/apriltag_ros/cfg/ or .../config/).
+
+/**:
+  ros__parameters:
+    image_transport: raw
+    family: 36h11
+    size: 0.3          # meters - matches the 0.3 x 0.3 box in the apriltag_X model.sdf files
+    max_hamming: 0
+    tag:
+      ids: [0, 1, 2]
+      frames: [waste_marker_0, waste_marker_1, waste_marker_2]
+      sizes: [0.3, 0.3, 0.3]

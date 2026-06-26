@@ -1,0 +1,83 @@
+"""
+Spawns the full three-robot fleet (red/green/blue) into the lake world.
+
+Run:
+    ros2 launch asv_fleet spawn_fleet.launch.py
+
+Each robot gets:
+  - its own ROS2 namespace (red_asv / green_asv / blue_asv)
+  - its own robot_state_publisher (so TF frames don't collide)
+  - its own spawn_entity.py call at a distinct (x, y) so the hulls
+    don't spawn on top of each other
+
+Topics per robot (replace <name> with red_asv/green_asv/blue_asv):
+    /<name>/cmd_vel              geometry_msgs/Twist   (drive it)
+    /<name>/odom                 nav_msgs/Odometry
+    /<name>/camera/image_raw     sensor_msgs/Image
+    /<name>/camera/camera_info   sensor_msgs/CameraInfo
+    /<name>/scan                 sensor_msgs/LaserScan
+"""
+import os
+from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import Command
+from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory
+
+
+def make_robot_nodes(xacro_path, name, r, g, b, x, y):
+    robot_description = Command([
+        'xacro ', xacro_path,
+        ' robot_name:=', name,
+        f' color_r:={r} color_g:={g} color_b:={b}'
+    ])
+
+    robot_state_publisher = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        namespace=name,
+        output='screen',
+        parameters=[{'robot_description': robot_description, 'use_sim_time': True}]
+    )
+
+    spawn_entity = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        arguments=[
+            '-topic', f'/{name}/robot_description',
+            '-entity', name,
+            '-x', str(x), '-y', str(y), '-z', '0.1'
+        ],
+        output='screen'
+    )
+
+    return [robot_state_publisher, spawn_entity]
+
+
+def generate_launch_description():
+    pkg_share = get_package_share_directory('asv_fleet')
+    pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
+
+    world_path = os.path.join(pkg_share, 'worlds', 'lake_world.world')
+    xacro_path = os.path.join(pkg_share, 'urdf', 'asv_robot.xacro')
+
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py')
+        ),
+        launch_arguments={'world': world_path}.items()
+    )
+
+    # name,        r,   g,   b,   x,    y
+    fleet = [
+        ('red_asv',   1.0, 0.0, 0.0, -2.0,  2.0),
+        ('green_asv', 0.0, 1.0, 0.0,  0.0, -2.0),
+        ('blue_asv',  0.0, 0.0, 1.0,  2.0,  2.0),
+    ]
+
+    nodes = [gazebo]
+    for name, r, g, b, x, y in fleet:
+        nodes += make_robot_nodes(xacro_path, name, r, g, b, x, y)
+
+    return LaunchDescription(nodes)

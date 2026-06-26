@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ============================================================
+       ASV MACRO
+       One call to this macro = one complete, driveable, sensored
+       boat. We call it three times (red/green/blue) from
+       asv_robot.xacro, each with a different robot_name + color.
+
+       IMPORTANT: every link/joint name is prefixed with
+       ${robot_name}_. This is NOT optional cosmetics - ROS2's
+       tf2 broadcaster always publishes on the *global* /tf topic
+       no matter what namespace the node is in. If all three boats
+       used a link called "base_link", their transforms would
+       collide on /tf and RViz/tf would only ever show one robot
+       correctly. Prefixing keeps every frame unique.
+       ============================================================ -->
+  <xacro:macro name="asv" params="robot_name color_r color_g color_b">
+
+    <material name="${robot_name}_hull_color">
+      <color rgba="${color_r} ${color_g} ${color_b} 1.0"/>
+    </material>
+
+    <!-- ===================== HULL / base_link ===================== -->
+    <!-- This is the only link with real mass - it's the whole boat.
+         Everything else (mast, lidar, camera) is a lightweight fixed
+         attachment, which is the standard way to model rigidly
+         mounted sensors: they don't need their own joints/DOF, just
+         their own frame for TF and sensor plugin attachment. -->
+    <link name="${robot_name}_base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.6 0.3 0.15"/>
+        </geometry>
+        <material name="${robot_name}_hull_color"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.6 0.3 0.15"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="5.0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="0.0388" ixy="0.0" ixz="0.0"
+                 iyy="0.165"  iyz="0.0"
+                 izz="0.1925"/>
+      </inertial>
+    </link>
+
+    <!-- ===================== MAST (holds the lidar up high) ===================== -->
+    <link name="${robot_name}_mast_link">
+      <visual>
+        <origin xyz="0 0 0.125" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.02" length="0.25"/>
+        </geometry>
+        <material name="${robot_name}_hull_color"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.125" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.02" length="0.25"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.1"/>
+        <origin xyz="0 0 0.125" rpy="0 0 0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.0001"/>
+      </inertial>
+    </link>
+
+    <joint name="${robot_name}_mast_joint" type="fixed">
+      <parent link="${robot_name}_base_link"/>
+      <child link="${robot_name}_mast_link"/>
+      <!-- mounted slightly behind center, like a real ASV sensor tower -->
+      <origin xyz="-0.15 0 0.075" rpy="0 0 0"/>
+    </joint>
+
+    <!-- ===================== LIDAR (top of mast, 360 deg view) ===================== -->
+    <link name="${robot_name}_lidar_link">
+      <visual>
+        <geometry><cylinder radius="0.03" length="0.04"/></geometry>
+        <material name="${robot_name}_hull_color"/>
+      </visual>
+      <collision>
+        <geometry><cylinder radius="0.03" length="0.04"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="0.05"/>
+        <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+      </inertial>
+    </link>
+
+    <joint name="${robot_name}_lidar_joint" type="fixed">
+      <parent link="${robot_name}_mast_link"/>
+      <child link="${robot_name}_lidar_link"/>
+      <origin xyz="0 0 0.27" rpy="0 0 0"/>
+    </joint>
+
+    <!-- ===================== RGB CAMERA (bow-mounted, angled down) ===================== -->
+    <link name="${robot_name}_camera_link">
+      <visual>
+        <geometry><box size="0.03 0.05 0.03"/></geometry>
+        <material name="${robot_name}_hull_color"/>
+      </visual>
+      <collision>
+        <geometry><box size="0.03 0.05 0.03"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="0.05"/>
+        <inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00001"/>
+      </inertial>
+    </link>
+
+    <joint name="${robot_name}_camera_joint" type="fixed">
+      <parent link="${robot_name}_base_link"/>
+      <child link="${robot_name}_camera_link"/>
+      <!-- bow-mounted, tilted down ~8.5 deg so the water ahead is in frame -->
+      <origin xyz="0.3 0 0.05" rpy="0 0.15 0"/>
+    </joint>
+
+    <!-- Optical frame: ROS camera convention (REP-103) is x-right, y-down,
+         z-forward, which is rotated 90 deg from the URDF link's x-forward,
+         z-up convention. Camera plugins need this extra frame or images
+         come out sideways/rotated in RViz and detection pipelines. -->
+    <link name="${robot_name}_camera_optical_link"/>
+    <joint name="${robot_name}_camera_optical_joint" type="fixed">
+      <parent link="${robot_name}_camera_link"/>
+      <child link="${robot_name}_camera_optical_link"/>
+      <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+    </joint>
+
+    <!-- ============================================================
+         GAZEBO-SPECIFIC EXTENSIONS
+         ============================================================ -->
+
+    <!-- kinematic=true is the key fix for "robot just sinks / doesn't
+         float": it tells ODE to NOT apply gravity or physics forces to
+         this link at all. The hull stays exactly at the z-height it was
+         spawned at (water level) and is moved purely by the planar_move
+         plugin below. This is a deliberate simplification - it skips
+         full buoyancy physics (which needs per-link volume/center-of-
+         buoyancy tuning and is easy to get unstable) in favor of a
+         simple, reliable "floats and drives" boat for a perception-
+         focused project. -->
+    <gazebo reference="${robot_name}_base_link">
+      <kinematic>true</kinematic>
+    </gazebo>
+
+    <!-- Movement: cmd_vel -> direct x/y/yaw velocity on the hull.
+         This is why we don't need wheel joints - a boat has none,
+         and gazebo_ros_planar_move drives the link directly. -->
+    <gazebo>
+      <plugin name="${robot_name}_planar_move" filename="libgazebo_ros_planar_move.so">
+        <ros>
+          <namespace>${robot_name}</namespace>
+        </ros>
+        <update_rate>30</update_rate>
+        <publish_odom>true</publish_odom>
+        <publish_odom_tf>true</publish_odom_tf>
+        <command_topic>cmd_vel</command_topic>
+        <odometry_topic>odom</odometry_topic>
+        <odometry_frame>${robot_name}_odom</odometry_frame>
+        <robot_base_frame>${robot_name}_base_link</robot_base_frame>
+        <covariance_x>0.0001</covariance_x>
+        <covariance_y>0.0001</covariance_y>
+        <covariance_yaw>0.01</covariance_yaw>
+      </plugin>
+    </gazebo>
+
+    <!-- RGB camera sensor -->
+    <gazebo reference="${robot_name}_camera_link">
+      <sensor type="camera" name="${robot_name}_rgb_camera">
+        <update_rate>15.0</update_rate>
+        <camera name="head">
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>50</far>
+          </clip>
+        </camera>
+        <plugin name="${robot_name}_camera_controller" filename="libgazebo_ros_camera.so">
+          <ros>
+            <namespace>${robot_name}</namespace>
+            <remapping>image_raw:=camera/image_raw</remapping>
+            <remapping>camera_info:=camera/camera_info</remapping>
+          </ros>
+          <camera_name>${robot_name}_camera</camera_name>
+          <frame_name>${robot_name}_camera_optical_link</frame_name>
+        </plugin>
+      </sensor>
+    </gazebo>
+
+    <!-- 2D Lidar sensor -->
+    <gazebo reference="${robot_name}_lidar_link">
+      <sensor type="ray" name="${robot_name}_lidar_sensor">
+        <pose>0 0 0 0 0 0</pose>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.14159</min_angle>
+              <max_angle>3.14159</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.12</min>
+            <max>15.0</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="${robot_name}_lidar_controller" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <namespace>${robot_name}</namespace>
+            <remapping>~/out:=scan</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>${robot_name}_lidar_link</frame_name>
+        </plugin>
+      </sensor>
+    </gazebo>
+
+  </xacro:macro>
+</robot>

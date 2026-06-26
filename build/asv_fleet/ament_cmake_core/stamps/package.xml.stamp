@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>asv_fleet</name>
+  <version>0.1.0</version>
+  <description>
+    Three-robot autonomous surface vehicle (ASV) fleet simulation for
+    lake waste detection in Gazebo Classic (gazebo11) / ROS2 Humble.
+    Spawns color-coded floating boats with RGB camera + lidar, drives
+    them via cmd_vel, and detects AprilTag-marked waste with apriltag_ros.
+  </description>
+  <maintainer email="manasvi@example.com">Manasvi</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_ros_pkgs</exec_depend>
+  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <!-- apriltag_ros + apriltag_msgs are only needed once you get to the
+       detection/autonomy stage (apriltag_detection.launch.py and
+       waste_seek_node.py). Comment these out if not yet installed and
+       you just want to spawn/drive the fleet first. -->
+  <exec_depend>apriltag_ros</exec_depend>
+  <exec_depend>apriltag_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,1 @@
+/home/manasvi3/ros2_ws/src/asv_fleet/scripts/waste_seek_node.py
