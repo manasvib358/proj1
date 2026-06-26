@@ -35,3 +35,4 @@ nano ~/ros2_ws/src/aqua_robot_gazebo/worlds/lake_waste.world
 opening robots sdf
 nano ~/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation.launch.py
 
+~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf  spawning robot file 
