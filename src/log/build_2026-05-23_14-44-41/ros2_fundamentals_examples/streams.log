@@ -1,0 +1,42 @@
+[0.030s] Invoking command in '/home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manasvi3/ros2_ws/src/ros2_fundamentals_examples -DCMAKE_INSTALL_PREFIX=/home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples
+[0.592s] -- The C compiler identification is GNU 11.4.0
+[1.654s] -- The CXX compiler identification is GNU 11.4.0
+[2.477s] -- Detecting C compiler ABI info
+[2.816s] -- Detecting C compiler ABI info - done
+[2.830s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.838s] -- Detecting C compile features
+[2.840s] -- Detecting C compile features - done
+[2.848s] -- Detecting CXX compiler ABI info
+[3.190s] -- Detecting CXX compiler ABI info - done
+[3.203s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.203s] -- Detecting CXX compile features
+[3.204s] -- Detecting CXX compile features - done
+[3.222s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.499s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.700s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.856s] -- Added test 'lint_cmake' to check CMake code style
+[3.859s] -- Added test 'xmllint' to check XML markup files
+[3.864s] -- Configuring done
+[3.872s] -- Generating done
+[3.876s] -- Build files have been written to: /home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples
+[3.883s] Invoked command in '/home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manasvi3/ros2_ws/src/ros2_fundamentals_examples -DCMAKE_INSTALL_PREFIX=/home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples
+[3.888s] Invoking command in '/home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples -- -j14 -l14
+[3.948s] Invoked command in '/home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples -- -j14 -l14
+[3.968s] Invoking command in '/home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples
+[3.978s] -- Install configuration: ""
+[3.981s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ament_index/resource_index/package_run_dependencies/ros2_fundamentals_examples
+[3.982s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ament_index/resource_index/parent_prefix_path/ros2_fundamentals_examples
+[3.983s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/environment/ament_prefix_path.sh
+[3.984s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/environment/ament_prefix_path.dsv
+[3.984s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/environment/path.sh
+[3.984s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/environment/path.dsv
+[3.985s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/local_setup.bash
+[3.985s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/local_setup.sh
+[3.987s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/local_setup.zsh
+[3.987s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/local_setup.dsv
+[3.988s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/package.dsv
+[3.988s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ament_index/resource_index/packages/ros2_fundamentals_examples
+[3.988s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/cmake/ros2_fundamentals_examplesConfig.cmake
+[3.988s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/cmake/ros2_fundamentals_examplesConfig-version.cmake
+[3.988s] -- Installing: /home/manasvi3/ros2_ws/src/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/package.xml
+[3.990s] Invoked command in '/home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manasvi3/ros2_ws/src/build/ros2_fundamentals_examples

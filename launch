@@ -1,0 +1,62 @@
+launching RVIZ
+Step 0: Open a new terminal
+cd ~/ros2_ws
+source install/setup.bash
+Step 1: Check that ROS sees your package
+ros2 pkg list | grep aqua_robot_gazebo
+Step 2: Launch RViz
+ros2 launch aqua_robot_gazebo lake_simulation.launch.py
+editing file 
+
+
+Launching Gazebo
+Step 1 — Remove the duplicate (keep only the one directly in src/)
+rm -rf ~/ros2_ws/src/aqua_waste_robot
+Step 2 — Build now
+cd ~/ros2_ws
+colcon build --packages-select aqua_robot_gazebo
+source install/setup.bash
+Step 3 — Launch
+export LIBGL_ALWAYS_SOFTWARE=1
+export MESA_GL_VERSION_OVERRIDE=3.3
+ros2 launch aqua_robot_gazebo lake_simulation.launch.py
+
+
+Step 5: Verify Robot Exists
+In a new terminal:
+cd ~/ros2_ws
+source install/setup.bash
+
+ros2 topic list
+You should see ROS topics from your robot.
+
+opening world sdf file
+nano ~/ros2_ws/src/aqua_robot_gazebo/worlds/lake_waste.world
+opening robot sdf
+nano ~/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation.launch.py
+opening robot urdf file
+nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf
+
+~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf  spawning robot file 
+
+
+
+
+camera setup 
+sudo apt update
+sudo apt install ros-humble-rqt-image-view
+
+source /opt/ros/humble/setup.bash
+rqt_image_view
+
+The package is installed, but the executable isn't being found. Let's diagnose it.
+Please run these commands one by one and paste all the outputs:
+
+which rqt
+which rqt_image_view
+dpkg -L ros-humble-rqt-image-view | grep bin
+dpkg -L ros-humble-rqt-image-view
+There's also a good chance you're launching it the wrong way.
+
+Try:
+rqt

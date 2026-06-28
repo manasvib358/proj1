@@ -1,0 +1,890 @@
+[0.000000] (-) TimerEvent: {}
+[0.001994] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.002075] (-) JobUnselected: {'identifier': 'ros2_fundamentals_examples'}
+[0.002109] (aqua_robot_gazebo) JobQueued: {'identifier': 'aqua_robot_gazebo', 'dependencies': OrderedDict()}
+[0.002207] (aqua_robot_gazebo) JobStarted: {'identifier': 'aqua_robot_gazebo'}
+[0.028000] (aqua_robot_gazebo) JobProgress: {'identifier': 'aqua_robot_gazebo', 'progress': 'cmake'}
+[0.029861] (aqua_robot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/manasvi3/ros2_ws/src/aqua_robot_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/manasvi3/ros2_ws/install/aqua_robot_gazebo'], 'cwd': '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/1412_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.101207] (-) TimerEvent: {}
+[0.202818] (-) TimerEvent: {}
+[0.306490] (-) TimerEvent: {}
+[0.410085] (-) TimerEvent: {}
+[0.511919] (-) TimerEvent: {}
+[0.615998] (-) TimerEvent: {}
+[0.616972] (aqua_robot_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.716298] (-) TimerEvent: {}
+[0.817160] (-) TimerEvent: {}
+[0.920366] (-) TimerEvent: {}
+[1.024085] (-) TimerEvent: {}
+[1.125713] (-) TimerEvent: {}
+[1.229327] (-) TimerEvent: {}
+[1.333085] (-) TimerEvent: {}
+[1.436762] (-) TimerEvent: {}
+[1.540457] (-) TimerEvent: {}
+[1.642678] (-) TimerEvent: {}
+[1.746103] (-) TimerEvent: {}
+[1.846751] (-) TimerEvent: {}
+[1.949900] (-) TimerEvent: {}
+[2.053490] (-) TimerEvent: {}
+[2.157215] (-) TimerEvent: {}
+[2.163598] (aqua_robot_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.260264] (-) TimerEvent: {}
+[2.363846] (-) TimerEvent: {}
+[2.467460] (-) TimerEvent: {}
+[2.571149] (-) TimerEvent: {}
+[2.674832] (-) TimerEvent: {}
+[2.778683] (-) TimerEvent: {}
+[2.882361] (-) TimerEvent: {}
+[2.986034] (-) TimerEvent: {}
+[3.089677] (-) TimerEvent: {}
+[3.192755] (-) TimerEvent: {}
+[3.293093] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.293571] (-) TimerEvent: {}
+[3.394068] (-) TimerEvent: {}
+[3.494783] (-) TimerEvent: {}
+[3.595424] (-) TimerEvent: {}
+[3.635443] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.647065] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.654228] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.655442] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.663236] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.695574] (-) TimerEvent: {}
+[3.796150] (-) TimerEvent: {}
+[3.896716] (-) TimerEvent: {}
+[3.955533] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.971387] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.974226] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.975040] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.996513] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.996858] (-) TimerEvent: {}
+[4.097484] (-) TimerEvent: {}
+[4.198189] (-) TimerEvent: {}
+[4.298797] (-) TimerEvent: {}
+[4.313329] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.398957] (-) TimerEvent: {}
+[4.499721] (-) TimerEvent: {}
+[4.546334] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.599923] (-) TimerEvent: {}
+[4.700547] (-) TimerEvent: {}
+[4.801105] (-) TimerEvent: {}
+[4.901633] (-) TimerEvent: {}
+[4.967854] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.979806] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.001867] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.002282] (-) TimerEvent: {}
+[5.040699] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.082524] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.102464] (-) TimerEvent: {}
+[5.203074] (-) TimerEvent: {}
+[5.205046] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.212171] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.303255] (-) TimerEvent: {}
+[5.403751] (-) TimerEvent: {}
+[5.504305] (-) TimerEvent: {}
+[5.604899] (-) TimerEvent: {}
+[5.705560] (-) TimerEvent: {}
+[5.806103] (-) TimerEvent: {}
+[5.906622] (-) TimerEvent: {}
+[6.007306] (-) TimerEvent: {}
+[6.107754] (-) TimerEvent: {}
+[6.208317] (-) TimerEvent: {}
+[6.308916] (-) TimerEvent: {}
+[6.409636] (-) TimerEvent: {}
+[6.510135] (-) TimerEvent: {}
+[6.610996] (-) TimerEvent: {}
+[6.711514] (-) TimerEvent: {}
+[6.812076] (-) TimerEvent: {}
+[6.912588] (-) TimerEvent: {}
+[7.013251] (-) TimerEvent: {}
+[7.113922] (-) TimerEvent: {}
+[7.214893] (-) TimerEvent: {}
+[7.315478] (-) TimerEvent: {}
+[7.416019] (-) TimerEvent: {}
+[7.516589] (-) TimerEvent: {}
+[7.617450] (-) TimerEvent: {}
+[7.717951] (-) TimerEvent: {}
+[7.818474] (-) TimerEvent: {}
+[7.919002] (-) TimerEvent: {}
+[8.019492] (-) TimerEvent: {}
+[8.120015] (-) TimerEvent: {}
+[8.220565] (-) TimerEvent: {}
+[8.222659] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.320753] (-) TimerEvent: {}
+[8.421381] (-) TimerEvent: {}
+[8.521907] (-) TimerEvent: {}
+[8.622418] (-) TimerEvent: {}
+[8.722950] (-) TimerEvent: {}
+[8.823556] (-) TimerEvent: {}
+[8.924198] (-) TimerEvent: {}
+[9.024737] (-) TimerEvent: {}
+[9.125440] (-) TimerEvent: {}
+[9.225927] (-) TimerEvent: {}
+[9.326349] (-) TimerEvent: {}
+[9.426844] (-) TimerEvent: {}
+[9.527391] (-) TimerEvent: {}
+[9.628011] (-) TimerEvent: {}
+[9.728506] (-) TimerEvent: {}
+[9.829084] (-) TimerEvent: {}
+[9.929637] (-) TimerEvent: {}
+[10.030163] (-) TimerEvent: {}
+[10.130671] (-) TimerEvent: {}
+[10.231200] (-) TimerEvent: {}
+[10.331782] (-) TimerEvent: {}
+[10.432285] (-) TimerEvent: {}
+[10.532814] (-) TimerEvent: {}
+[10.633379] (-) TimerEvent: {}
+[10.733901] (-) TimerEvent: {}
+[10.834413] (-) TimerEvent: {}
+[10.934916] (-) TimerEvent: {}
+[11.035459] (-) TimerEvent: {}
+[11.095411] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[11.135583] (-) TimerEvent: {}
+[11.236149] (-) TimerEvent: {}
+[11.336710] (-) TimerEvent: {}
+[11.437348] (-) TimerEvent: {}
+[11.537999] (-) TimerEvent: {}
+[11.638507] (-) TimerEvent: {}
+[11.739012] (-) TimerEvent: {}
+[11.839490] (-) TimerEvent: {}
+[11.940001] (-) TimerEvent: {}
+[12.040523] (-) TimerEvent: {}
+[12.141071] (-) TimerEvent: {}
+[12.241704] (-) TimerEvent: {}
+[12.342371] (-) TimerEvent: {}
+[12.442918] (-) TimerEvent: {}
+[12.543714] (-) TimerEvent: {}
+[12.644243] (-) TimerEvent: {}
+[12.744876] (-) TimerEvent: {}
+[12.845496] (-) TimerEvent: {}
+[12.945998] (-) TimerEvent: {}
+[13.046534] (-) TimerEvent: {}
+[13.147029] (-) TimerEvent: {}
+[13.247817] (-) TimerEvent: {}
+[13.348359] (-) TimerEvent: {}
+[13.448923] (-) TimerEvent: {}
+[13.549488] (-) TimerEvent: {}
+[13.650088] (-) TimerEvent: {}
+[13.750612] (-) TimerEvent: {}
+[13.851212] (-) TimerEvent: {}
+[13.951860] (-) TimerEvent: {}
+[14.052377] (-) TimerEvent: {}
+[14.153080] (-) TimerEvent: {}
+[14.253636] (-) TimerEvent: {}
+[14.354248] (-) TimerEvent: {}
+[14.454768] (-) TimerEvent: {}
+[14.555222] (-) TimerEvent: {}
+[14.655776] (-) TimerEvent: {}
+[14.756341] (-) TimerEvent: {}
+[14.856901] (-) TimerEvent: {}
+[14.957401] (-) TimerEvent: {}
+[15.057882] (-) TimerEvent: {}
+[15.158406] (-) TimerEvent: {}
+[15.259013] (-) TimerEvent: {}
+[15.359496] (-) TimerEvent: {}
+[15.460008] (-) TimerEvent: {}
+[15.560507] (-) TimerEvent: {}
+[15.661234] (-) TimerEvent: {}
+[15.761725] (-) TimerEvent: {}
+[15.862241] (-) TimerEvent: {}
+[15.962803] (-) TimerEvent: {}
+[16.063426] (-) TimerEvent: {}
+[16.163956] (-) TimerEvent: {}
+[16.264525] (-) TimerEvent: {}
+[16.365262] (-) TimerEvent: {}
+[16.428593] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[16.454231] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[16.465600] (-) TimerEvent: {}
+[16.566198] (-) TimerEvent: {}
+[16.666882] (-) TimerEvent: {}
+[16.767412] (-) TimerEvent: {}
+[16.789357] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[16.789895] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[16.867627] (-) TimerEvent: {}
+[16.968243] (-) TimerEvent: {}
+[17.068780] (-) TimerEvent: {}
+[17.091626] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[17.093638] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[17.168897] (-) TimerEvent: {}
+[17.228386] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[17.251257] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[17.253482] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[17.269166] (-) TimerEvent: {}
+[17.275710] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[17.369632] (-) TimerEvent: {}
+[17.470243] (-) TimerEvent: {}
+[17.553350] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[17.570445] (-) TimerEvent: {}
+[17.629215] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[17.670631] (-) TimerEvent: {}
+[17.681235] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[17.738966] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[17.770882] (-) TimerEvent: {}
+[17.871399] (-) TimerEvent: {}
+[17.971933] (-) TimerEvent: {}
+[18.072396] (-) TimerEvent: {}
+[18.173067] (-) TimerEvent: {}
+[18.273591] (-) TimerEvent: {}
+[18.374128] (-) TimerEvent: {}
+[18.474629] (-) TimerEvent: {}
+[18.575315] (-) TimerEvent: {}
+[18.675923] (-) TimerEvent: {}
+[18.719697] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[18.730364] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[18.749938] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[18.756605] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[18.758170] (aqua_robot_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[18.768825] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[18.776139] (-) TimerEvent: {}
+[18.788246] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[18.841015] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[18.876286] (-) TimerEvent: {}
+[18.976856] (-) TimerEvent: {}
+[19.077444] (-) TimerEvent: {}
+[19.177954] (-) TimerEvent: {}
+[19.278423] (-) TimerEvent: {}
+[19.378952] (-) TimerEvent: {}
+[19.479527] (-) TimerEvent: {}
+[19.580177] (-) TimerEvent: {}
+[19.680748] (-) TimerEvent: {}
+[19.781363] (-) TimerEvent: {}
+[19.847265] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[19.863219] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[19.881495] (-) TimerEvent: {}
+[19.981994] (-) TimerEvent: {}
+[20.082505] (-) TimerEvent: {}
+[20.183020] (-) TimerEvent: {}
+[20.283619] (-) TimerEvent: {}
+[20.384419] (-) TimerEvent: {}
+[20.484999] (-) TimerEvent: {}
+[20.585509] (-) TimerEvent: {}
+[20.614759] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[20.615176] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[20.685652] (-) TimerEvent: {}
+[20.786178] (-) TimerEvent: {}
+[20.886730] (-) TimerEvent: {}
+[20.987497] (-) TimerEvent: {}
+[21.088022] (-) TimerEvent: {}
+[21.188568] (-) TimerEvent: {}
+[21.289127] (-) TimerEvent: {}
+[21.389894] (-) TimerEvent: {}
+[21.407280] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[21.407717] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[21.490050] (-) TimerEvent: {}
+[21.590617] (-) TimerEvent: {}
+[21.691214] (-) TimerEvent: {}
+[21.791703] (-) TimerEvent: {}
+[21.892314] (-) TimerEvent: {}
+[21.992829] (-) TimerEvent: {}
+[22.093390] (-) TimerEvent: {}
+[22.193922] (-) TimerEvent: {}
+[22.238957] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[22.239447] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[22.294031] (-) TimerEvent: {}
+[22.394578] (-) TimerEvent: {}
+[22.495023] (-) TimerEvent: {}
+[22.595551] (-) TimerEvent: {}
+[22.696068] (-) TimerEvent: {}
+[22.796576] (-) TimerEvent: {}
+[22.897222] (-) TimerEvent: {}
+[22.924192] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[22.924728] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[22.997380] (-) TimerEvent: {}
+[23.097866] (-) TimerEvent: {}
+[23.198385] (-) TimerEvent: {}
+[23.298842] (-) TimerEvent: {}
+[23.399343] (-) TimerEvent: {}
+[23.499893] (-) TimerEvent: {}
+[23.600410] (-) TimerEvent: {}
+[23.666707] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[23.667010] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[23.700534] (-) TimerEvent: {}
+[23.801109] (-) TimerEvent: {}
+[23.901707] (-) TimerEvent: {}
+[24.002223] (-) TimerEvent: {}
+[24.102732] (-) TimerEvent: {}
+[24.203244] (-) TimerEvent: {}
+[24.303743] (-) TimerEvent: {}
+[24.404292] (-) TimerEvent: {}
+[24.476207] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[24.504444] (-) TimerEvent: {}
+[24.605166] (-) TimerEvent: {}
+[24.705772] (-) TimerEvent: {}
+[24.806299] (-) TimerEvent: {}
+[24.906814] (-) TimerEvent: {}
+[25.007354] (-) TimerEvent: {}
+[25.107871] (-) TimerEvent: {}
+[25.208376] (-) TimerEvent: {}
+[25.308918] (-) TimerEvent: {}
+[25.409447] (-) TimerEvent: {}
+[25.509948] (-) TimerEvent: {}
+[25.610572] (-) TimerEvent: {}
+[25.711726] (-) TimerEvent: {}
+[25.812352] (-) TimerEvent: {}
+[25.912828] (-) TimerEvent: {}
+[26.013438] (-) TimerEvent: {}
+[26.113957] (-) TimerEvent: {}
+[26.214502] (-) TimerEvent: {}
+[26.315018] (-) TimerEvent: {}
+[26.415493] (-) TimerEvent: {}
+[26.516112] (-) TimerEvent: {}
+[26.616616] (-) TimerEvent: {}
+[26.717204] (-) TimerEvent: {}
+[26.817713] (-) TimerEvent: {}
+[26.918216] (-) TimerEvent: {}
+[27.018740] (-) TimerEvent: {}
+[27.119268] (-) TimerEvent: {}
+[27.219801] (-) TimerEvent: {}
+[27.320305] (-) TimerEvent: {}
+[27.420762] (-) TimerEvent: {}
+[27.521348] (-) TimerEvent: {}
+[27.621837] (-) TimerEvent: {}
+[27.722354] (-) TimerEvent: {}
+[27.822886] (-) TimerEvent: {}
+[27.923502] (-) TimerEvent: {}
+[28.024205] (-) TimerEvent: {}
+[28.124712] (-) TimerEvent: {}
+[28.225370] (-) TimerEvent: {}
+[28.325896] (-) TimerEvent: {}
+[28.426355] (-) TimerEvent: {}
+[28.526861] (-) TimerEvent: {}
+[28.627465] (-) TimerEvent: {}
+[28.728046] (-) TimerEvent: {}
+[28.828558] (-) TimerEvent: {}
+[28.929138] (-) TimerEvent: {}
+[29.029661] (-) TimerEvent: {}
+[29.131346] (-) TimerEvent: {}
+[29.231915] (-) TimerEvent: {}
+[29.332724] (-) TimerEvent: {}
+[29.433279] (-) TimerEvent: {}
+[29.533812] (-) TimerEvent: {}
+[29.634344] (-) TimerEvent: {}
+[29.734969] (-) TimerEvent: {}
+[29.835474] (-) TimerEvent: {}
+[29.935957] (-) TimerEvent: {}
+[30.036572] (-) TimerEvent: {}
+[30.137111] (-) TimerEvent: {}
+[30.237618] (-) TimerEvent: {}
+[30.338164] (-) TimerEvent: {}
+[30.438726] (-) TimerEvent: {}
+[30.539260] (-) TimerEvent: {}
+[30.639700] (-) TimerEvent: {}
+[30.740288] (-) TimerEvent: {}
+[30.840843] (-) TimerEvent: {}
+[30.941482] (-) TimerEvent: {}
+[31.042047] (-) TimerEvent: {}
+[31.142535] (-) TimerEvent: {}
+[31.242973] (-) TimerEvent: {}
+[31.343451] (-) TimerEvent: {}
+[31.443982] (-) TimerEvent: {}
+[31.544482] (-) TimerEvent: {}
+[31.645197] (-) TimerEvent: {}
+[31.745687] (-) TimerEvent: {}
+[31.846186] (-) TimerEvent: {}
+[31.946711] (-) TimerEvent: {}
+[32.047252] (-) TimerEvent: {}
+[32.147872] (-) TimerEvent: {}
+[32.248456] (-) TimerEvent: {}
+[32.349087] (-) TimerEvent: {}
+[32.449637] (-) TimerEvent: {}
+[32.550235] (-) TimerEvent: {}
+[32.650930] (-) TimerEvent: {}
+[32.751584] (-) TimerEvent: {}
+[32.852099] (-) TimerEvent: {}
+[32.952615] (-) TimerEvent: {}
+[33.053397] (-) TimerEvent: {}
+[33.153891] (-) TimerEvent: {}
+[33.254396] (-) TimerEvent: {}
+[33.354928] (-) TimerEvent: {}
+[33.455423] (-) TimerEvent: {}
+[33.555914] (-) TimerEvent: {}
+[33.656434] (-) TimerEvent: {}
+[33.757034] (-) TimerEvent: {}
+[33.857480] (-) TimerEvent: {}
+[33.957967] (-) TimerEvent: {}
+[34.058463] (-) TimerEvent: {}
+[34.158917] (-) TimerEvent: {}
+[34.259428] (-) TimerEvent: {}
+[34.359987] (-) TimerEvent: {}
+[34.460499] (-) TimerEvent: {}
+[34.561103] (-) TimerEvent: {}
+[34.661614] (-) TimerEvent: {}
+[34.762129] (-) TimerEvent: {}
+[34.862644] (-) TimerEvent: {}
+[34.963089] (-) TimerEvent: {}
+[35.063668] (-) TimerEvent: {}
+[35.164414] (-) TimerEvent: {}
+[35.265039] (-) TimerEvent: {}
+[35.365600] (-) TimerEvent: {}
+[35.466109] (-) TimerEvent: {}
+[35.566589] (-) TimerEvent: {}
+[35.667104] (-) TimerEvent: {}
+[35.767622] (-) TimerEvent: {}
+[35.868136] (-) TimerEvent: {}
+[35.968669] (-) TimerEvent: {}
+[36.069161] (-) TimerEvent: {}
+[36.169679] (-) TimerEvent: {}
+[36.270153] (-) TimerEvent: {}
+[36.370691] (-) TimerEvent: {}
+[36.471218] (-) TimerEvent: {}
+[36.571728] (-) TimerEvent: {}
+[36.672236] (-) TimerEvent: {}
+[36.772776] (-) TimerEvent: {}
+[36.873348] (-) TimerEvent: {}
+[36.973940] (-) TimerEvent: {}
+[37.074547] (-) TimerEvent: {}
+[37.175146] (-) TimerEvent: {}
+[37.275623] (-) TimerEvent: {}
+[37.376125] (-) TimerEvent: {}
+[37.476640] (-) TimerEvent: {}
+[37.577252] (-) TimerEvent: {}
+[37.677806] (-) TimerEvent: {}
+[37.778315] (-) TimerEvent: {}
+[37.878818] (-) TimerEvent: {}
+[37.979317] (-) TimerEvent: {}
+[38.079968] (-) TimerEvent: {}
+[38.180802] (-) TimerEvent: {}
+[38.281354] (-) TimerEvent: {}
+[38.381902] (-) TimerEvent: {}
+[38.482406] (-) TimerEvent: {}
+[38.583034] (-) TimerEvent: {}
+[38.683635] (-) TimerEvent: {}
+[38.784146] (-) TimerEvent: {}
+[38.884774] (-) TimerEvent: {}
+[38.985362] (-) TimerEvent: {}
+[39.085877] (-) TimerEvent: {}
+[39.186396] (-) TimerEvent: {}
+[39.286852] (-) TimerEvent: {}
+[39.387283] (-) TimerEvent: {}
+[39.487772] (-) TimerEvent: {}
+[39.588304] (-) TimerEvent: {}
+[39.688974] (-) TimerEvent: {}
+[39.789486] (-) TimerEvent: {}
+[39.890003] (-) TimerEvent: {}
+[39.990536] (-) TimerEvent: {}
+[40.091071] (-) TimerEvent: {}
+[40.191722] (-) TimerEvent: {}
+[40.292243] (-) TimerEvent: {}
+[40.392751] (-) TimerEvent: {}
+[40.493411] (-) TimerEvent: {}
+[40.593892] (-) TimerEvent: {}
+[40.694320] (-) TimerEvent: {}
+[40.794840] (-) TimerEvent: {}
+[40.895349] (-) TimerEvent: {}
+[40.995976] (-) TimerEvent: {}
+[41.096674] (-) TimerEvent: {}
+[41.197246] (-) TimerEvent: {}
+[41.297814] (-) TimerEvent: {}
+[41.398321] (-) TimerEvent: {}
+[41.498787] (-) TimerEvent: {}
+[41.599270] (-) TimerEvent: {}
+[41.699772] (-) TimerEvent: {}
+[41.800272] (-) TimerEvent: {}
+[41.900884] (-) TimerEvent: {}
+[42.001505] (-) TimerEvent: {}
+[42.102000] (-) TimerEvent: {}
+[42.202508] (-) TimerEvent: {}
+[42.303014] (-) TimerEvent: {}
+[42.403517] (-) TimerEvent: {}
+[42.503967] (-) TimerEvent: {}
+[42.604485] (-) TimerEvent: {}
+[42.705034] (-) TimerEvent: {}
+[42.805532] (-) TimerEvent: {}
+[42.906020] (-) TimerEvent: {}
+[43.006570] (-) TimerEvent: {}
+[43.107071] (-) TimerEvent: {}
+[43.207580] (-) TimerEvent: {}
+[43.308057] (-) TimerEvent: {}
+[43.408545] (-) TimerEvent: {}
+[43.509079] (-) TimerEvent: {}
+[43.609586] (-) TimerEvent: {}
+[43.710118] (-) TimerEvent: {}
+[43.810613] (-) TimerEvent: {}
+[43.911159] (-) TimerEvent: {}
+[44.011771] (-) TimerEvent: {}
+[44.112311] (-) TimerEvent: {}
+[44.212833] (-) TimerEvent: {}
+[44.313495] (-) TimerEvent: {}
+[44.413989] (-) TimerEvent: {}
+[44.514476] (-) TimerEvent: {}
+[44.615083] (-) TimerEvent: {}
+[44.715645] (-) TimerEvent: {}
+[44.816201] (-) TimerEvent: {}
+[44.916740] (-) TimerEvent: {}
+[45.017317] (-) TimerEvent: {}
+[45.117785] (-) TimerEvent: {}
+[45.218272] (-) TimerEvent: {}
+[45.318800] (-) TimerEvent: {}
+[45.419339] (-) TimerEvent: {}
+[45.519854] (-) TimerEvent: {}
+[45.620376] (-) TimerEvent: {}
+[45.720880] (-) TimerEvent: {}
+[45.821424] (-) TimerEvent: {}
+[45.921925] (-) TimerEvent: {}
+[46.022447] (-) TimerEvent: {}
+[46.122957] (-) TimerEvent: {}
+[46.223462] (-) TimerEvent: {}
+[46.323974] (-) TimerEvent: {}
+[46.424455] (-) TimerEvent: {}
+[46.524993] (-) TimerEvent: {}
+[46.625517] (-) TimerEvent: {}
+[46.726165] (-) TimerEvent: {}
+[46.826657] (-) TimerEvent: {}
+[46.927145] (-) TimerEvent: {}
+[47.027641] (-) TimerEvent: {}
+[47.128166] (-) TimerEvent: {}
+[47.228698] (-) TimerEvent: {}
+[47.329365] (-) TimerEvent: {}
+[47.429886] (-) TimerEvent: {}
+[47.530364] (-) TimerEvent: {}
+[47.630878] (-) TimerEvent: {}
+[47.731461] (-) TimerEvent: {}
+[47.831980] (-) TimerEvent: {}
+[47.932484] (-) TimerEvent: {}
+[48.033048] (-) TimerEvent: {}
+[48.133568] (-) TimerEvent: {}
+[48.234004] (-) TimerEvent: {}
+[48.334571] (-) TimerEvent: {}
+[48.435072] (-) TimerEvent: {}
+[48.535576] (-) TimerEvent: {}
+[48.636096] (-) TimerEvent: {}
+[48.736720] (-) TimerEvent: {}
+[48.837428] (-) TimerEvent: {}
+[48.937915] (-) TimerEvent: {}
+[49.038430] (-) TimerEvent: {}
+[49.138936] (-) TimerEvent: {}
+[49.239428] (-) TimerEvent: {}
+[49.339947] (-) TimerEvent: {}
+[49.440595] (-) TimerEvent: {}
+[49.541131] (-) TimerEvent: {}
+[49.641682] (-) TimerEvent: {}
+[49.742176] (-) TimerEvent: {}
+[49.842629] (-) TimerEvent: {}
+[49.943105] (-) TimerEvent: {}
+[50.043588] (-) TimerEvent: {}
+[50.144069] (-) TimerEvent: {}
+[50.244574] (-) TimerEvent: {}
+[50.345245] (-) TimerEvent: {}
+[50.445757] (-) TimerEvent: {}
+[50.546247] (-) TimerEvent: {}
+[50.646773] (-) TimerEvent: {}
+[50.747372] (-) TimerEvent: {}
+[50.847846] (-) TimerEvent: {}
+[50.948341] (-) TimerEvent: {}
+[51.048872] (-) TimerEvent: {}
+[51.149344] (-) TimerEvent: {}
+[51.249840] (-) TimerEvent: {}
+[51.350357] (-) TimerEvent: {}
+[51.450872] (-) TimerEvent: {}
+[51.551397] (-) TimerEvent: {}
+[51.651938] (-) TimerEvent: {}
+[51.752446] (-) TimerEvent: {}
+[51.852987] (-) TimerEvent: {}
+[51.953497] (-) TimerEvent: {}
+[52.054062] (-) TimerEvent: {}
+[52.154582] (-) TimerEvent: {}
+[52.255132] (-) TimerEvent: {}
+[52.355553] (-) TimerEvent: {}
+[52.456063] (-) TimerEvent: {}
+[52.556557] (-) TimerEvent: {}
+[52.657075] (-) TimerEvent: {}
+[52.757607] (-) TimerEvent: {}
+[52.858144] (-) TimerEvent: {}
+[52.958605] (-) TimerEvent: {}
+[53.059092] (-) TimerEvent: {}
+[53.159611] (-) TimerEvent: {}
+[53.260141] (-) TimerEvent: {}
+[53.360629] (-) TimerEvent: {}
+[53.461128] (-) TimerEvent: {}
+[53.561710] (-) TimerEvent: {}
+[53.662439] (-) TimerEvent: {}
+[53.763025] (-) TimerEvent: {}
+[53.863579] (-) TimerEvent: {}
+[53.964083] (-) TimerEvent: {}
+[54.064665] (-) TimerEvent: {}
+[54.165220] (-) TimerEvent: {}
+[54.265734] (-) TimerEvent: {}
+[54.366302] (-) TimerEvent: {}
+[54.466948] (-) TimerEvent: {}
+[54.567535] (-) TimerEvent: {}
+[54.668114] (-) TimerEvent: {}
+[54.768716] (-) TimerEvent: {}
+[54.869439] (-) TimerEvent: {}
+[54.970024] (-) TimerEvent: {}
+[55.070616] (-) TimerEvent: {}
+[55.171205] (-) TimerEvent: {}
+[55.271745] (-) TimerEvent: {}
+[55.372286] (-) TimerEvent: {}
+[55.472852] (-) TimerEvent: {}
+[55.573398] (-) TimerEvent: {}
+[55.674071] (-) TimerEvent: {}
+[55.774582] (-) TimerEvent: {}
+[55.875101] (-) TimerEvent: {}
+[55.975608] (-) TimerEvent: {}
+[56.076048] (-) TimerEvent: {}
+[56.176576] (-) TimerEvent: {}
+[56.277195] (-) TimerEvent: {}
+[56.377772] (-) TimerEvent: {}
+[56.478239] (-) TimerEvent: {}
+[56.578810] (-) TimerEvent: {}
+[56.679364] (-) TimerEvent: {}
+[56.779918] (-) TimerEvent: {}
+[56.880522] (-) TimerEvent: {}
+[56.981084] (-) TimerEvent: {}
+[57.081626] (-) TimerEvent: {}
+[57.182161] (-) TimerEvent: {}
+[57.282670] (-) TimerEvent: {}
+[57.383301] (-) TimerEvent: {}
+[57.483780] (-) TimerEvent: {}
+[57.584289] (-) TimerEvent: {}
+[57.684814] (-) TimerEvent: {}
+[57.785350] (-) TimerEvent: {}
+[57.886164] (-) TimerEvent: {}
+[57.986692] (-) TimerEvent: {}
+[58.087126] (-) TimerEvent: {}
+[58.187684] (-) TimerEvent: {}
+[58.288288] (-) TimerEvent: {}
+[58.388781] (-) TimerEvent: {}
+[58.489352] (-) TimerEvent: {}
+[58.589862] (-) TimerEvent: {}
+[58.690346] (-) TimerEvent: {}
+[58.790837] (-) TimerEvent: {}
+[58.891303] (-) TimerEvent: {}
+[58.993241] (-) TimerEvent: {}
+[59.093808] (-) TimerEvent: {}
+[59.194369] (-) TimerEvent: {}
+[59.294827] (-) TimerEvent: {}
+[59.395338] (-) TimerEvent: {}
+[59.495918] (-) TimerEvent: {}
+[59.596496] (-) TimerEvent: {}
+[59.697101] (-) TimerEvent: {}
+[59.797619] (-) TimerEvent: {}
+[59.898141] (-) TimerEvent: {}
+[59.998983] (-) TimerEvent: {}
+[60.100871] (-) TimerEvent: {}
+[60.201413] (-) TimerEvent: {}
+[60.301903] (-) TimerEvent: {}
+[60.402418] (-) TimerEvent: {}
+[60.502927] (-) TimerEvent: {}
+[60.603449] (-) TimerEvent: {}
+[60.703975] (-) TimerEvent: {}
+[60.804484] (-) TimerEvent: {}
+[60.905051] (-) TimerEvent: {}
+[61.005565] (-) TimerEvent: {}
+[61.106194] (-) TimerEvent: {}
+[61.206717] (-) TimerEvent: {}
+[61.254734] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[61.263914] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[61.265931] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[61.306828] (-) TimerEvent: {}
+[61.407340] (-) TimerEvent: {}
+[61.507857] (-) TimerEvent: {}
+[61.608355] (-) TimerEvent: {}
+[61.709071] (-) TimerEvent: {}
+[61.809548] (-) TimerEvent: {}
+[61.910032] (-) TimerEvent: {}
+[62.010517] (-) TimerEvent: {}
+[62.111204] (-) TimerEvent: {}
+[62.211840] (-) TimerEvent: {}
+[62.312398] (-) TimerEvent: {}
+[62.413031] (-) TimerEvent: {}
+[62.513629] (-) TimerEvent: {}
+[62.614200] (-) TimerEvent: {}
+[62.714758] (-) TimerEvent: {}
+[62.815322] (-) TimerEvent: {}
+[62.915815] (-) TimerEvent: {}
+[63.016345] (-) TimerEvent: {}
+[63.116907] (-) TimerEvent: {}
+[63.217446] (-) TimerEvent: {}
+[63.318007] (-) TimerEvent: {}
+[63.418512] (-) TimerEvent: {}
+[63.519160] (-) TimerEvent: {}
+[63.619668] (-) TimerEvent: {}
+[63.720294] (-) TimerEvent: {}
+[63.821010] (-) TimerEvent: {}
+[63.921613] (-) TimerEvent: {}
+[64.022465] (-) TimerEvent: {}
+[64.102084] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[64.122604] (-) TimerEvent: {}
+[64.223158] (-) TimerEvent: {}
+[64.323773] (-) TimerEvent: {}
+[64.424556] (-) TimerEvent: {}
+[64.525110] (-) TimerEvent: {}
+[64.625629] (-) TimerEvent: {}
+[64.726210] (-) TimerEvent: {}
+[64.826701] (-) TimerEvent: {}
+[64.927268] (-) TimerEvent: {}
+[65.027837] (-) TimerEvent: {}
+[65.128444] (-) TimerEvent: {}
+[65.229165] (-) TimerEvent: {}
+[65.329652] (-) TimerEvent: {}
+[65.430148] (-) TimerEvent: {}
+[65.530744] (-) TimerEvent: {}
+[65.631239] (-) TimerEvent: {}
+[65.731789] (-) TimerEvent: {}
+[65.832272] (-) TimerEvent: {}
+[65.932871] (-) TimerEvent: {}
+[66.033514] (-) TimerEvent: {}
+[66.134011] (-) TimerEvent: {}
+[66.234616] (-) TimerEvent: {}
+[66.335210] (-) TimerEvent: {}
+[66.435805] (-) TimerEvent: {}
+[66.536406] (-) TimerEvent: {}
+[66.637083] (-) TimerEvent: {}
+[66.706782] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[66.724622] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[66.737260] (-) TimerEvent: {}
+[66.753844] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[66.805650] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[66.837388] (-) TimerEvent: {}
+[66.935276] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[66.937499] (-) TimerEvent: {}
+[66.955666] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[67.001356] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[67.006887] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[67.008127] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[67.037635] (-) TimerEvent: {}
+[67.138187] (-) TimerEvent: {}
+[67.238755] (-) TimerEvent: {}
+[67.339288] (-) TimerEvent: {}
+[67.439821] (-) TimerEvent: {}
+[67.540363] (-) TimerEvent: {}
+[67.640985] (-) TimerEvent: {}
+[67.741539] (-) TimerEvent: {}
+[67.842097] (-) TimerEvent: {}
+[67.942617] (-) TimerEvent: {}
+[68.043116] (-) TimerEvent: {}
+[68.143656] (-) TimerEvent: {}
+[68.244603] (-) TimerEvent: {}
+[68.345227] (-) TimerEvent: {}
+[68.445723] (-) TimerEvent: {}
+[68.546205] (-) TimerEvent: {}
+[68.646738] (-) TimerEvent: {}
+[68.747301] (-) TimerEvent: {}
+[68.847795] (-) TimerEvent: {}
+[68.948349] (-) TimerEvent: {}
+[69.048838] (-) TimerEvent: {}
+[69.149396] (-) TimerEvent: {}
+[69.250196] (-) TimerEvent: {}
+[69.351020] (-) TimerEvent: {}
+[69.451616] (-) TimerEvent: {}
+[69.552146] (-) TimerEvent: {}
+[69.652713] (-) TimerEvent: {}
+[69.753319] (-) TimerEvent: {}
+[69.853821] (-) TimerEvent: {}
+[69.855156] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[69.865561] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[69.884743] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[69.931956] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[69.935317] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[69.935995] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[69.953962] (-) TimerEvent: {}
+[70.031201] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[70.054298] (-) TimerEvent: {}
+[70.134594] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[70.136064] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[70.154448] (-) TimerEvent: {}
+[70.254948] (-) TimerEvent: {}
+[70.335760] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[70.337486] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[70.342081] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[70.342889] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[70.343556] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[70.350165] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[70.350605] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[70.355045] (-) TimerEvent: {}
+[70.455488] (-) TimerEvent: {}
+[70.556068] (-) TimerEvent: {}
+[70.656637] (-) TimerEvent: {}
+[70.757731] (-) TimerEvent: {}
+[70.858274] (-) TimerEvent: {}
+[70.958808] (-) TimerEvent: {}
+[71.059314] (-) TimerEvent: {}
+[71.159849] (-) TimerEvent: {}
+[71.260363] (-) TimerEvent: {}
+[71.361002] (-) TimerEvent: {}
+[71.461533] (-) TimerEvent: {}
+[71.561982] (-) TimerEvent: {}
+[71.662571] (-) TimerEvent: {}
+[71.763084] (-) TimerEvent: {}
+[71.863648] (-) TimerEvent: {}
+[71.964182] (-) TimerEvent: {}
+[72.064665] (-) TimerEvent: {}
+[72.165280] (-) TimerEvent: {}
+[72.265785] (-) TimerEvent: {}
+[72.366321] (-) TimerEvent: {}
+[72.466815] (-) TimerEvent: {}
+[72.567297] (-) TimerEvent: {}
+[72.667830] (-) TimerEvent: {}
+[72.768358] (-) TimerEvent: {}
+[72.868855] (-) TimerEvent: {}
+[72.969508] (-) TimerEvent: {}
+[73.069988] (-) TimerEvent: {}
+[73.170687] (-) TimerEvent: {}
+[73.271268] (-) TimerEvent: {}
+[73.372017] (-) TimerEvent: {}
+[73.472499] (-) TimerEvent: {}
+[73.573247] (-) TimerEvent: {}
+[73.596685] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[73.619236] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[73.637806] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[73.673472] (-) TimerEvent: {}
+[73.686414] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[73.699355] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[73.718851] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[73.763576] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[73.764228] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[73.765494] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[73.765900] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[73.773570] (-) TimerEvent: {}
+[73.775751] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[73.776219] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[73.798098] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[73.846758] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[73.873717] (-) TimerEvent: {}
+[73.974192] (-) TimerEvent: {}
+[74.050290] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[74.056705] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[74.058141] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[74.059430] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[74.062699] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[74.066304] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[74.074331] (-) TimerEvent: {}
+[74.079181] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[74.088727] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/manasvi3/ros2_ws/build/aqua_robot_gazebo\n'}
+[74.116576] (aqua_robot_gazebo) CommandEnded: {'returncode': 0}
+[74.121534] (aqua_robot_gazebo) JobProgress: {'identifier': 'aqua_robot_gazebo', 'progress': 'build'}
+[74.121595] (aqua_robot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo', '--', '-j14', '-l14'], 'cwd': '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/1412_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[74.174569] (-) TimerEvent: {}
+[74.203330] (aqua_robot_gazebo) CommandEnded: {'returncode': 0}
+[74.205299] (aqua_robot_gazebo) JobProgress: {'identifier': 'aqua_robot_gazebo', 'progress': 'install'}
+[74.217906] (aqua_robot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo'], 'cwd': '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/1412_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[74.230530] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[74.231351] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds\n'}
+[74.233997] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds/lake_waste.world.save\n'}
+[74.235189] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds/lake_waste.world\n'}
+[74.236406] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf\n'}
+[74.236747] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf/aqua_robot.urdf\n'}
+[74.237937] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch\n'}
+[74.238111] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation.launch.py\n'}
+[74.238819] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/config\n'}
+[74.238976] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/config/aqua_robot.rviz\n'}
+[74.239632] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation.launch.py\n'}
+[74.240282] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/ament_index/resource_index/package_run_dependencies/aqua_robot_gazebo\n'}
+[74.240664] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/ament_index/resource_index/parent_prefix_path/aqua_robot_gazebo\n'}
+[74.241248] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/environment/ament_prefix_path.sh\n'}
+[74.241385] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/environment/ament_prefix_path.dsv\n'}
+[74.241759] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/environment/path.sh\n'}
+[74.241954] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/environment/path.dsv\n'}
+[74.242050] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/local_setup.bash\n'}
+[74.242304] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/local_setup.sh\n'}
+[74.242399] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/local_setup.zsh\n'}
+[74.242653] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/local_setup.dsv\n'}
+[74.242742] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/package.dsv\n'}
+[74.243068] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/ament_index/resource_index/packages/aqua_robot_gazebo\n'}
+[74.243427] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/cmake/aqua_robot_gazeboConfig.cmake\n'}
+[74.243951] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/cmake/aqua_robot_gazeboConfig-version.cmake\n'}
+[74.244457] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/package.xml\n'}
+[74.246790] (aqua_robot_gazebo) CommandEnded: {'returncode': 0}
+[74.275127] (-) TimerEvent: {}
+[74.291174] (aqua_robot_gazebo) JobEnded: {'identifier': 'aqua_robot_gazebo', 'rc': 0}
+[74.293694] (-) EventReactorShutdown: {}
