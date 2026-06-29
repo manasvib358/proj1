@@ -37,6 +37,9 @@ nano ~/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation.launch.py
 opening robot urdf file
 nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf
 
+nano ~/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation_asv.launch.py
+
+nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf
 ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf  spawning robot file 
 
 
@@ -60,3 +63,13 @@ There's also a good chance you're launching it the wrong way.
 
 Try:
 rqt
+
+
+movement 
+launch gazebo 
+then
+ros2 run teleop_twist_keyboard teleop_twist_keyboard \
+--ros-args -r cmd_vel:=/aqua_robot/cmd_vel
+
+dierc
+ros2 topic echo /aqua_robot/cmd_vel
