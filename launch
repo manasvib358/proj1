@@ -9,7 +9,7 @@ ros2 launch aqua_robot_gazebo lake_simulation.launch.py
 editing file 
 
 
-Launching Gazebo
+Launching Gazebo and rviz
 Step 1 — Remove the duplicate (keep only the one directly in src/)
 rm -rf ~/ros2_ws/src/aqua_waste_robot
 Step 2 — Build now
@@ -44,7 +44,7 @@ nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf
 
 
 
-
+if camera not working try this
 camera setup 
 sudo apt update
 sudo apt install ros-humble-rqt-image-view
@@ -86,3 +86,17 @@ source ~/ros2_ws/install/setup.bash
 ros2 topic list | grep imu
 check IMU data
 ros2 topic echo /aqua_robot/imu_plugin/out
+
+GPS testing
+launch gazebo then
+source ~/ros2_ws/install/setup.bash
+ros2 topic list | grep gps
+Run:for data
+ros2 topic echo /aqua_robot/gps_plugin/out
+
+LIDAR 
+check topic
+source ~/ros2_ws/install/setup.bash
+ros2 topic list | grep laser
+check data
+ros2 topic echo /aqua_robot/laser_controller/out --once
