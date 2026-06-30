@@ -21,6 +21,11 @@ export LIBGL_ALWAYS_SOFTWARE=1
 export MESA_GL_VERSION_OVERRIDE=3.3
 ros2 launch aqua_robot_gazebo lake_simulation.launch.py
 
+export LIBGL_ALWAYS_SOFTWARE=1
+export MESA_GL_VERSION_OVERRIDE=3.3
+ros2 launch aqua_robot_gazebo lake_simulation.launch.py robot_x:=10.0 ro
+bot_y:=30.0
+
 
 Step 5: Verify Robot Exists
 In a new terminal:
@@ -38,11 +43,6 @@ opening robot urdf file
 nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf
 
 nano ~/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation_asv.launch.py
-
-nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf
-~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf  spawning robot file 
-
-
 
 if camera not working try this
 camera setup 
