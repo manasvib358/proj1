@@ -1,0 +1,41 @@
+[0.023s] Invoking command in '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manasvi3/ros2_ws/build/aqua_robot_gazebo -- -j14 -l14
+[0.141s] Invoked command in '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manasvi3/ros2_ws/build/aqua_robot_gazebo -- -j14 -l14
+[0.158s] Invoking command in '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manasvi3/ros2_ws/build/aqua_robot_gazebo
+[0.170s] -- Install configuration: ""
+[0.170s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds
+[0.171s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds/lake_waste.world.save
+[0.172s] -- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds/lake_waste.world
+[0.172s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds/lake_waste.world.backup
+[0.172s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf
+[0.173s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf/aqua_robot_backup.urdf
+[0.173s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf/aqua_robot.urdf
+[0.173s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf/aqua_robot_multi.urdf.xacro
+[0.173s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch
+[0.174s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation.launch.py
+[0.174s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation_asv.launch.py
+[0.174s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/spawn_robot.launch.py
+[0.174s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/__pycache__
+[0.174s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/__pycache__/spawn_robot.launch.cpython-310.pyc
+[0.175s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/single_robot.launch.py
+[0.175s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/multi_robot_safe.launch.py
+[0.175s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation.launch.py.save
+[0.175s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/config
+[0.175s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/config/aqua_robot.rviz
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation.launch.py
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/multi_robot_safe.launch.py
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/ament_index/resource_index/package_run_dependencies/aqua_robot_gazebo
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/ament_index/resource_index/parent_prefix_path/aqua_robot_gazebo
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/environment/ament_prefix_path.sh
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/environment/ament_prefix_path.dsv
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/environment/path.sh
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/environment/path.dsv
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/local_setup.bash
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/local_setup.sh
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/local_setup.zsh
+[0.176s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/local_setup.dsv
+[0.177s] -- Installing: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/package.dsv
+[0.178s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/ament_index/resource_index/packages/aqua_robot_gazebo
+[0.179s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/cmake/aqua_robot_gazeboConfig.cmake
+[0.180s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/cmake/aqua_robot_gazeboConfig-version.cmake
+[0.181s] -- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/package.xml
+[0.183s] Invoked command in '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manasvi3/ros2_ws/build/aqua_robot_gazebo

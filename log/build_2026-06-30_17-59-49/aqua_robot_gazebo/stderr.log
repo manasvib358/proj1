@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:56 (file):
+  file INSTALL cannot find
+  "/home/manasvi3/ros2_ws/src/aqua_robot_gazebo/launch/multi_robot_safe.launch.py":
+  No such file or directory.
+
+[0m

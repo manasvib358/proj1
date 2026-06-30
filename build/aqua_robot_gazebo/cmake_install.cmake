@@ -53,7 +53,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aqua_robot_gazebo/launch" TYPE PROGRAM FILES "/home/manasvi3/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation.launch.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aqua_robot_gazebo/launch" TYPE PROGRAM FILES
+    "/home/manasvi3/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation.launch.py"
+    "/home/manasvi3/ros2_ws/src/aqua_robot_gazebo/launch/multi_robot_safe.launch.py"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

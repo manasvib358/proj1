@@ -1,0 +1,43 @@
+[0.050s] Invoking command in '/home/manasvi3/ros2_ws/build/asv_fleet': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manasvi3/ros2_ws/build/asv_fleet -- -j14 -l14
+[0.250s] Invoked command in '/home/manasvi3/ros2_ws/build/asv_fleet' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manasvi3/ros2_ws/build/asv_fleet -- -j14 -l14
+[0.254s] Invoking command in '/home/manasvi3/ros2_ws/build/asv_fleet': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manasvi3/ros2_ws/build/asv_fleet
+[0.283s] -- Install configuration: ""
+[0.283s] -- Execute custom install script
+[0.284s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/apriltag_detection.launch.py
+[0.285s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/fleet_autonomy.launch.py
+[0.286s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/spawn_fleet.launch.py
+[0.290s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/spawn_fleet.launch.py.save
+[0.290s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/spawn_single_asv.launch.py
+[0.291s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/urdf/asv_macro.xacro
+[0.292s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/urdf/asv_robot.xacro
+[0.293s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/worlds/lake_world.world
+[0.300s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_0/materials/scripts/apriltag_0.material
+[0.302s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_0/materials/textures/apriltag_0.png
+[0.302s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_0/model.config
+[0.304s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_0/model.sdf
+[0.305s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_1/materials/scripts/apriltag_1.material
+[0.307s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_1/materials/textures/apriltag_1.png
+[0.312s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_1/model.config
+[0.322s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_1/model.sdf
+[0.324s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_2/materials/scripts/apriltag_2.material
+[0.325s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_2/materials/textures/apriltag_2.png
+[0.325s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_2/model.config
+[0.327s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_2/model.sdf
+[0.327s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/config/tags.yaml
+[0.329s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/lib/asv_fleet/waste_seek_node.py
+[0.329s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/ament_index/resource_index/package_run_dependencies/asv_fleet
+[0.329s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/ament_index/resource_index/parent_prefix_path/asv_fleet
+[0.330s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/environment/ament_prefix_path.sh
+[0.330s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/environment/ament_prefix_path.dsv
+[0.332s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/environment/path.sh
+[0.332s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/environment/path.dsv
+[0.332s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/local_setup.bash
+[0.332s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/local_setup.sh
+[0.332s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/local_setup.zsh
+[0.333s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/local_setup.dsv
+[0.333s] -- Symlinking: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/package.dsv
+[0.341s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/ament_index/resource_index/packages/asv_fleet
+[0.341s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/cmake/asv_fleetConfig.cmake
+[0.342s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/cmake/asv_fleetConfig-version.cmake
+[0.343s] -- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/package.xml
+[0.426s] Invoked command in '/home/manasvi3/ros2_ws/build/asv_fleet' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manasvi3/ros2_ws/build/asv_fleet

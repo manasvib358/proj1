@@ -26,9 +26,9 @@ install(
 install(
   PROGRAMS
     launch/lake_simulation.launch.py
+    launch/multi_robot_safe.launch.py
   DESTINATION share/${PROJECT_NAME}/launch
 )
-
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()

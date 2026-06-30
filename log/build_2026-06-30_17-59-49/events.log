@@ -1,0 +1,461 @@
+[0.000000] (-) TimerEvent: {}
+[0.000226] (aqua_robot_gazebo) JobQueued: {'identifier': 'aqua_robot_gazebo', 'dependencies': OrderedDict()}
+[0.000245] (asv_fleet) JobQueued: {'identifier': 'asv_fleet', 'dependencies': OrderedDict()}
+[0.000255] (my_robot_description) JobQueued: {'identifier': 'my_robot_description', 'dependencies': OrderedDict()}
+[0.000262] (ros2_fundamentals_examples) JobQueued: {'identifier': 'ros2_fundamentals_examples', 'dependencies': OrderedDict()}
+[0.000758] (aqua_robot_gazebo) JobStarted: {'identifier': 'aqua_robot_gazebo'}
+[0.007864] (asv_fleet) JobStarted: {'identifier': 'asv_fleet'}
+[0.013803] (my_robot_description) JobStarted: {'identifier': 'my_robot_description'}
+[0.018624] (ros2_fundamentals_examples) JobStarted: {'identifier': 'ros2_fundamentals_examples'}
+[0.022501] (aqua_robot_gazebo) JobProgress: {'identifier': 'aqua_robot_gazebo', 'progress': 'cmake'}
+[0.023686] (aqua_robot_gazebo) JobProgress: {'identifier': 'aqua_robot_gazebo', 'progress': 'build'}
+[0.023740] (aqua_robot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo', '--', '-j14', '-l14'], 'cwd': '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manasvi3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/331_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.030288] (asv_fleet) JobProgress: {'identifier': 'asv_fleet', 'progress': 'cmake'}
+[0.030548] (asv_fleet) JobProgress: {'identifier': 'asv_fleet', 'progress': 'build'}
+[0.030932] (asv_fleet) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/manasvi3/ros2_ws/build/asv_fleet', '--', '-j14', '-l14'], 'cwd': '/home/manasvi3/ros2_ws/build/asv_fleet', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manasvi3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/331_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/asv_fleet'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.041899] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'cmake'}
+[0.041923] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'build'}
+[0.041932] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/manasvi3/ros2_ws/build/my_robot_description', '--', '-j14', '-l14'], 'cwd': '/home/manasvi3/ros2_ws/build/my_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manasvi3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/331_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/my_robot_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.042507] (ros2_fundamentals_examples) JobProgress: {'identifier': 'ros2_fundamentals_examples', 'progress': 'cmake'}
+[0.042520] (ros2_fundamentals_examples) JobProgress: {'identifier': 'ros2_fundamentals_examples', 'progress': 'build'}
+[0.042528] (ros2_fundamentals_examples) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/manasvi3/ros2_ws/build/ros2_fundamentals_examples', '--', '-j14', '-l14'], 'cwd': '/home/manasvi3/ros2_ws/build/ros2_fundamentals_examples', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manasvi3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/331_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/ros2_fundamentals_examples'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.081640] (asv_fleet) CommandEnded: {'returncode': 0}
+[0.082268] (asv_fleet) JobProgress: {'identifier': 'asv_fleet', 'progress': 'install'}
+[0.091132] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.092274] (asv_fleet) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/manasvi3/ros2_ws/build/asv_fleet'], 'cwd': '/home/manasvi3/ros2_ws/build/asv_fleet', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manasvi3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/331_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/asv_fleet'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.094238] (my_robot_description) CommandEnded: {'returncode': 0}
+[0.095022] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'install'}
+[0.095505] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/manasvi3/ros2_ws/build/my_robot_description'], 'cwd': '/home/manasvi3/ros2_ws/build/my_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manasvi3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/331_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/my_robot_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.113533] (ros2_fundamentals_examples) CommandEnded: {'returncode': 0}
+[0.113838] (-) TimerEvent: {}
+[0.113955] (ros2_fundamentals_examples) JobProgress: {'identifier': 'ros2_fundamentals_examples', 'progress': 'install'}
+[0.113970] (ros2_fundamentals_examples) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/manasvi3/ros2_ws/build/ros2_fundamentals_examples'], 'cwd': '/home/manasvi3/ros2_ws/build/ros2_fundamentals_examples', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manasvi3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/331_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/ros2_fundamentals_examples'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.114115] (my_robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.114502] (my_robot_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.114544] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description\n'}
+[0.114573] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description\n'}
+[0.114599] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh\n'}
+[0.114626] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv\n'}
+[0.114648] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/environment/path.sh\n'}
+[0.114671] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv\n'}
+[0.114693] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.bash\n'}
+[0.114715] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.sh\n'}
+[0.114737] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh\n'}
+[0.114758] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv\n'}
+[0.114779] (my_robot_description) StdoutLine: {'line': b'-- Symlinking: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/package.dsv\n'}
+[0.114801] (asv_fleet) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.114834] (asv_fleet) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.114856] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/apriltag_detection.launch.py\n'}
+[0.114880] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/fleet_autonomy.launch.py\n'}
+[0.114903] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/spawn_fleet.launch.py\n'}
+[0.114924] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/spawn_fleet.launch.py.save\n'}
+[0.114946] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/launch/spawn_single_asv.launch.py\n'}
+[0.114967] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/urdf/asv_macro.xacro\n'}
+[0.114988] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/urdf/asv_robot.xacro\n'}
+[0.115009] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/worlds/lake_world.world\n'}
+[0.115030] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_0/materials/scripts/apriltag_0.material\n'}
+[0.115051] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_0/materials/textures/apriltag_0.png\n'}
+[0.115071] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_0/model.config\n'}
+[0.115092] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_0/model.sdf\n'}
+[0.115113] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_1/materials/scripts/apriltag_1.material\n'}
+[0.115134] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_1/materials/textures/apriltag_1.png\n'}
+[0.115155] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_1/model.config\n'}
+[0.115178] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_1/model.sdf\n'}
+[0.115199] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_2/materials/scripts/apriltag_2.material\n'}
+[0.115219] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_2/materials/textures/apriltag_2.png\n'}
+[0.115240] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_2/model.config\n'}
+[0.115261] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/models/apriltag_2/model.sdf\n'}
+[0.115282] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/config/tags.yaml\n'}
+[0.115303] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/lib/asv_fleet/waste_seek_node.py\n'}
+[0.115323] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/ament_index/resource_index/package_run_dependencies/asv_fleet\n'}
+[0.115343] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/ament_index/resource_index/parent_prefix_path/asv_fleet\n'}
+[0.115364] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/environment/ament_prefix_path.sh\n'}
+[0.115385] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/environment/ament_prefix_path.dsv\n'}
+[0.115406] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/environment/path.sh\n'}
+[0.115427] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/environment/path.dsv\n'}
+[0.115451] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/local_setup.bash\n'}
+[0.115472] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/local_setup.sh\n'}
+[0.115493] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/local_setup.zsh\n'}
+[0.115514] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/local_setup.dsv\n'}
+[0.115534] (asv_fleet) StdoutLine: {'line': b'-- Symlinking: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/package.dsv\n'}
+[0.116449] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description\n'}
+[0.116511] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake\n'}
+[0.116736] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake\n'}
+[0.116777] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/package.xml\n'}
+[0.116879] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot.urdf.xacro\n'}
+[0.116996] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/launch/display.launch.py\n'}
+[0.117073] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/my_robot_description/share/my_robot_description/launch/gazebo.launch.py\n'}
+[0.118971] (my_robot_description) CommandEnded: {'returncode': 0}
+[0.137265] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/ament_index/resource_index/packages/asv_fleet\n'}
+[0.139222] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/cmake/asv_fleetConfig.cmake\n'}
+[0.139301] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/cmake/asv_fleetConfig-version.cmake\n'}
+[0.139348] (asv_fleet) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/asv_fleet/share/asv_fleet/package.xml\n'}
+[0.140361] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.140678] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.140785] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ament_index/resource_index/package_run_dependencies/ros2_fundamentals_examples\n'}
+[0.140835] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ament_index/resource_index/parent_prefix_path/ros2_fundamentals_examples\n'}
+[0.140887] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/environment/ament_prefix_path.sh\n'}
+[0.140940] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/environment/ament_prefix_path.dsv\n'}
+[0.141010] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/environment/path.sh\n'}
+[0.141056] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/environment/path.dsv\n'}
+[0.141605] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/local_setup.bash\n'}
+[0.142551] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/local_setup.sh\n'}
+[0.142701] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/local_setup.zsh\n'}
+[0.142841] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/local_setup.dsv\n'}
+[0.143818] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Symlinking: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/package.dsv\n'}
+[0.143867] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ament_index/resource_index/packages/ros2_fundamentals_examples\n'}
+[0.143940] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/cmake/ros2_fundamentals_examplesConfig.cmake\n'}
+[0.144015] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/cmake/ros2_fundamentals_examplesConfig-version.cmake\n'}
+[0.144072] (ros2_fundamentals_examples) StdoutLine: {'line': b'-- Up-to-date symlink: /home/manasvi3/ros2_ws/install/ros2_fundamentals_examples/share/ros2_fundamentals_examples/package.xml\n'}
+[0.152003] (my_robot_description) JobEnded: {'identifier': 'my_robot_description', 'rc': 0}
+[0.154573] (asv_fleet) CommandEnded: {'returncode': 0}
+[0.166136] (asv_fleet) JobEnded: {'identifier': 'asv_fleet', 'rc': 0}
+[0.166813] (ros2_fundamentals_examples) CommandEnded: {'returncode': 0}
+[0.176129] (ros2_fundamentals_examples) JobEnded: {'identifier': 'ros2_fundamentals_examples', 'rc': 0}
+[0.213983] (-) TimerEvent: {}
+[0.235425] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.314121] (-) TimerEvent: {}
+[0.383307] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.385805] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.393675] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.404448] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.414200] (-) TimerEvent: {}
+[0.416624] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.455328] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.457548] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.514370] (-) TimerEvent: {}
+[0.614824] (-) TimerEvent: {}
+[0.715193] (-) TimerEvent: {}
+[0.815620] (-) TimerEvent: {}
+[0.916075] (-) TimerEvent: {}
+[1.016385] (-) TimerEvent: {}
+[1.116706] (-) TimerEvent: {}
+[1.217131] (-) TimerEvent: {}
+[1.317521] (-) TimerEvent: {}
+[1.417915] (-) TimerEvent: {}
+[1.518354] (-) TimerEvent: {}
+[1.618727] (-) TimerEvent: {}
+[1.719159] (-) TimerEvent: {}
+[1.819613] (-) TimerEvent: {}
+[1.919968] (-) TimerEvent: {}
+[2.020280] (-) TimerEvent: {}
+[2.120772] (-) TimerEvent: {}
+[2.221429] (-) TimerEvent: {}
+[2.321813] (-) TimerEvent: {}
+[2.422233] (-) TimerEvent: {}
+[2.522673] (-) TimerEvent: {}
+[2.623026] (-) TimerEvent: {}
+[2.723503] (-) TimerEvent: {}
+[2.823913] (-) TimerEvent: {}
+[2.924327] (-) TimerEvent: {}
+[3.024745] (-) TimerEvent: {}
+[3.125260] (-) TimerEvent: {}
+[3.225648] (-) TimerEvent: {}
+[3.326200] (-) TimerEvent: {}
+[3.426598] (-) TimerEvent: {}
+[3.526996] (-) TimerEvent: {}
+[3.627569] (-) TimerEvent: {}
+[3.727978] (-) TimerEvent: {}
+[3.828424] (-) TimerEvent: {}
+[3.928802] (-) TimerEvent: {}
+[4.029216] (-) TimerEvent: {}
+[4.129618] (-) TimerEvent: {}
+[4.229983] (-) TimerEvent: {}
+[4.330478] (-) TimerEvent: {}
+[4.430968] (-) TimerEvent: {}
+[4.531321] (-) TimerEvent: {}
+[4.631643] (-) TimerEvent: {}
+[4.731985] (-) TimerEvent: {}
+[4.832367] (-) TimerEvent: {}
+[4.932734] (-) TimerEvent: {}
+[5.033133] (-) TimerEvent: {}
+[5.133483] (-) TimerEvent: {}
+[5.233827] (-) TimerEvent: {}
+[5.334174] (-) TimerEvent: {}
+[5.434505] (-) TimerEvent: {}
+[5.534804] (-) TimerEvent: {}
+[5.635100] (-) TimerEvent: {}
+[5.735401] (-) TimerEvent: {}
+[5.835752] (-) TimerEvent: {}
+[5.936038] (-) TimerEvent: {}
+[6.036332] (-) TimerEvent: {}
+[6.136636] (-) TimerEvent: {}
+[6.236945] (-) TimerEvent: {}
+[6.337274] (-) TimerEvent: {}
+[6.434088] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.437388] (-) TimerEvent: {}
+[6.487491] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[6.519612] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[6.537512] (-) TimerEvent: {}
+[6.554629] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[6.557304] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.564023] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[6.566099] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[6.570969] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[6.571290] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[6.579215] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[6.580451] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[6.586553] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[6.588791] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[6.588857] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[6.588887] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[6.588914] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[6.588939] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[6.588965] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[6.588987] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[6.589010] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[6.589047] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[6.637634] (-) TimerEvent: {}
+[6.737961] (-) TimerEvent: {}
+[6.838283] (-) TimerEvent: {}
+[6.938692] (-) TimerEvent: {}
+[7.039122] (-) TimerEvent: {}
+[7.139558] (-) TimerEvent: {}
+[7.239996] (-) TimerEvent: {}
+[7.340421] (-) TimerEvent: {}
+[7.440866] (-) TimerEvent: {}
+[7.541277] (-) TimerEvent: {}
+[7.641684] (-) TimerEvent: {}
+[7.742078] (-) TimerEvent: {}
+[7.842487] (-) TimerEvent: {}
+[7.942924] (-) TimerEvent: {}
+[8.043312] (-) TimerEvent: {}
+[8.143702] (-) TimerEvent: {}
+[8.244134] (-) TimerEvent: {}
+[8.344534] (-) TimerEvent: {}
+[8.444952] (-) TimerEvent: {}
+[8.545376] (-) TimerEvent: {}
+[8.645722] (-) TimerEvent: {}
+[8.746051] (-) TimerEvent: {}
+[8.846409] (-) TimerEvent: {}
+[8.946776] (-) TimerEvent: {}
+[9.047145] (-) TimerEvent: {}
+[9.147472] (-) TimerEvent: {}
+[9.247782] (-) TimerEvent: {}
+[9.348127] (-) TimerEvent: {}
+[9.448449] (-) TimerEvent: {}
+[9.548769] (-) TimerEvent: {}
+[9.649140] (-) TimerEvent: {}
+[9.749483] (-) TimerEvent: {}
+[9.849841] (-) TimerEvent: {}
+[9.950190] (-) TimerEvent: {}
+[10.050558] (-) TimerEvent: {}
+[10.150938] (-) TimerEvent: {}
+[10.251342] (-) TimerEvent: {}
+[10.351765] (-) TimerEvent: {}
+[10.452138] (-) TimerEvent: {}
+[10.552569] (-) TimerEvent: {}
+[10.652940] (-) TimerEvent: {}
+[10.753327] (-) TimerEvent: {}
+[10.853720] (-) TimerEvent: {}
+[10.954261] (-) TimerEvent: {}
+[11.054682] (-) TimerEvent: {}
+[11.155063] (-) TimerEvent: {}
+[11.255421] (-) TimerEvent: {}
+[11.355799] (-) TimerEvent: {}
+[11.456159] (-) TimerEvent: {}
+[11.556520] (-) TimerEvent: {}
+[11.656988] (-) TimerEvent: {}
+[11.757502] (-) TimerEvent: {}
+[11.857913] (-) TimerEvent: {}
+[11.958359] (-) TimerEvent: {}
+[12.058718] (-) TimerEvent: {}
+[12.159123] (-) TimerEvent: {}
+[12.259605] (-) TimerEvent: {}
+[12.360015] (-) TimerEvent: {}
+[12.460374] (-) TimerEvent: {}
+[12.560763] (-) TimerEvent: {}
+[12.661141] (-) TimerEvent: {}
+[12.761499] (-) TimerEvent: {}
+[12.861846] (-) TimerEvent: {}
+[12.962207] (-) TimerEvent: {}
+[13.062542] (-) TimerEvent: {}
+[13.162887] (-) TimerEvent: {}
+[13.263206] (-) TimerEvent: {}
+[13.363544] (-) TimerEvent: {}
+[13.463905] (-) TimerEvent: {}
+[13.564242] (-) TimerEvent: {}
+[13.664587] (-) TimerEvent: {}
+[13.764982] (-) TimerEvent: {}
+[13.865332] (-) TimerEvent: {}
+[13.965679] (-) TimerEvent: {}
+[14.066056] (-) TimerEvent: {}
+[14.166407] (-) TimerEvent: {}
+[14.266740] (-) TimerEvent: {}
+[14.367091] (-) TimerEvent: {}
+[14.467426] (-) TimerEvent: {}
+[14.567754] (-) TimerEvent: {}
+[14.668119] (-) TimerEvent: {}
+[14.768505] (-) TimerEvent: {}
+[14.868846] (-) TimerEvent: {}
+[14.969226] (-) TimerEvent: {}
+[15.069548] (-) TimerEvent: {}
+[15.169899] (-) TimerEvent: {}
+[15.270285] (-) TimerEvent: {}
+[15.370656] (-) TimerEvent: {}
+[15.471019] (-) TimerEvent: {}
+[15.571362] (-) TimerEvent: {}
+[15.671720] (-) TimerEvent: {}
+[15.772094] (-) TimerEvent: {}
+[15.872442] (-) TimerEvent: {}
+[15.972764] (-) TimerEvent: {}
+[16.073132] (-) TimerEvent: {}
+[16.173475] (-) TimerEvent: {}
+[16.273845] (-) TimerEvent: {}
+[16.374244] (-) TimerEvent: {}
+[16.474762] (-) TimerEvent: {}
+[16.575197] (-) TimerEvent: {}
+[16.675624] (-) TimerEvent: {}
+[16.776014] (-) TimerEvent: {}
+[16.876404] (-) TimerEvent: {}
+[16.976788] (-) TimerEvent: {}
+[17.077202] (-) TimerEvent: {}
+[17.177613] (-) TimerEvent: {}
+[17.278045] (-) TimerEvent: {}
+[17.378474] (-) TimerEvent: {}
+[17.478899] (-) TimerEvent: {}
+[17.579326] (-) TimerEvent: {}
+[17.679707] (-) TimerEvent: {}
+[17.780101] (-) TimerEvent: {}
+[17.880505] (-) TimerEvent: {}
+[17.980886] (-) TimerEvent: {}
+[18.081280] (-) TimerEvent: {}
+[18.181661] (-) TimerEvent: {}
+[18.282054] (-) TimerEvent: {}
+[18.382433] (-) TimerEvent: {}
+[18.482833] (-) TimerEvent: {}
+[18.583224] (-) TimerEvent: {}
+[18.683600] (-) TimerEvent: {}
+[18.783994] (-) TimerEvent: {}
+[18.884417] (-) TimerEvent: {}
+[18.984824] (-) TimerEvent: {}
+[19.085232] (-) TimerEvent: {}
+[19.185671] (-) TimerEvent: {}
+[19.286096] (-) TimerEvent: {}
+[19.386472] (-) TimerEvent: {}
+[19.486857] (-) TimerEvent: {}
+[19.587240] (-) TimerEvent: {}
+[19.687622] (-) TimerEvent: {}
+[19.788032] (-) TimerEvent: {}
+[19.888663] (-) TimerEvent: {}
+[19.989102] (-) TimerEvent: {}
+[20.089504] (-) TimerEvent: {}
+[20.189925] (-) TimerEvent: {}
+[20.290352] (-) TimerEvent: {}
+[20.389215] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[20.390479] (-) TimerEvent: {}
+[20.390726] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[20.390958] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[20.490641] (-) TimerEvent: {}
+[20.591023] (-) TimerEvent: {}
+[20.691405] (-) TimerEvent: {}
+[20.791787] (-) TimerEvent: {}
+[20.892181] (-) TimerEvent: {}
+[20.992583] (-) TimerEvent: {}
+[21.092987] (-) TimerEvent: {}
+[21.193418] (-) TimerEvent: {}
+[21.267299] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[21.293568] (-) TimerEvent: {}
+[21.394008] (-) TimerEvent: {}
+[21.494408] (-) TimerEvent: {}
+[21.594798] (-) TimerEvent: {}
+[21.695204] (-) TimerEvent: {}
+[21.795598] (-) TimerEvent: {}
+[21.896190] (-) TimerEvent: {}
+[21.996621] (-) TimerEvent: {}
+[22.097166] (-) TimerEvent: {}
+[22.197584] (-) TimerEvent: {}
+[22.221248] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[22.224502] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[22.237414] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[22.262292] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[22.270721] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[22.289669] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[22.289929] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[22.297682] (-) TimerEvent: {}
+[22.398070] (-) TimerEvent: {}
+[22.498450] (-) TimerEvent: {}
+[22.598831] (-) TimerEvent: {}
+[22.699212] (-) TimerEvent: {}
+[22.799603] (-) TimerEvent: {}
+[22.900001] (-) TimerEvent: {}
+[23.000400] (-) TimerEvent: {}
+[23.100800] (-) TimerEvent: {}
+[23.164400] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[23.168437] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[23.176674] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[23.195583] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[23.196353] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[23.196654] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[23.197065] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[23.197157] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[23.200884] (-) TimerEvent: {}
+[23.269284] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[23.269997] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[23.270359] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[23.270609] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[23.272333] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[23.272580] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[23.301083] (-) TimerEvent: {}
+[23.401466] (-) TimerEvent: {}
+[23.501876] (-) TimerEvent: {}
+[23.602311] (-) TimerEvent: {}
+[23.702805] (-) TimerEvent: {}
+[23.803343] (-) TimerEvent: {}
+[23.903718] (-) TimerEvent: {}
+[24.004156] (-) TimerEvent: {}
+[24.104588] (-) TimerEvent: {}
+[24.205074] (-) TimerEvent: {}
+[24.305508] (-) TimerEvent: {}
+[24.364559] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[24.372463] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[24.393730] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[24.401626] (aqua_robot_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[24.405595] (-) TimerEvent: {}
+[24.419925] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[24.420186] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[24.420567] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[24.423566] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[24.424776] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[24.496725] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[24.503874] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[24.504969] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[24.505454] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[24.505705] (-) TimerEvent: {}
+[24.508138] (aqua_robot_gazebo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[24.514591] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[24.526110] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[24.528903] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/manasvi3/ros2_ws/build/aqua_robot_gazebo\n'}
+[24.551840] (aqua_robot_gazebo) CommandEnded: {'returncode': 0}
+[24.552526] (aqua_robot_gazebo) JobProgress: {'identifier': 'aqua_robot_gazebo', 'progress': 'install'}
+[24.553090] (aqua_robot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo'], 'cwd': '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'manasvi3'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/manasvi3'), ('OLDPWD', '/home/manasvi3/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/manasvi3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'manasvi3'), ('NAME', 'Manasvi'), ('WSL_INTEROP', '/run/WSL/331_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.3.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Users/Manasvi/Documents/New folder/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Manasvi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/Manasvi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Manasvi/Downloads/msys2-x86_64-20241208.exe:/mnt/c/Users/Manasvi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2025.2.3/bin:/mnt/c/Users/Manasvi/AppData/Local/Programs/Antigravity/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('MESA_GL_VERSION_OVERRIDE', '3.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/manasvi3/ros2_ws/install/ros2_fundamentals_examples:/home/manasvi3/ros2_ws/install/my_robot_description:/home/manasvi3/ros2_ws/install/asv_fleet:/home/manasvi3/ros2_ws/install/aqua_robot_gazebo:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[24.559400] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.559595] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds\n'}
+[24.559924] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds/lake_waste.world.save\n'}
+[24.560041] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds/lake_waste.world\n'}
+[24.560091] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/worlds/lake_waste.world.backup\n'}
+[24.560135] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf\n'}
+[24.560228] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf/aqua_robot_backup.urdf\n'}
+[24.560499] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf/aqua_robot.urdf\n'}
+[24.560761] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/urdf/aqua_robot_multi.urdf.xacro\n'}
+[24.560875] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch\n'}
+[24.561333] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation.launch.py\n'}
+[24.561549] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation_asv.launch.py\n'}
+[24.561697] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/spawn_robot.launch.py\n'}
+[24.561845] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/multi_robot.launch.py\n'}
+[24.561951] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/__pycache__\n'}
+[24.562127] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/__pycache__/spawn_robot.launch.cpython-310.pyc\n'}
+[24.562158] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/single_robot.launch.py\n'}
+[24.562252] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation.launch.py.save\n'}
+[24.562283] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/config\n'}
+[24.562316] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/config/aqua_robot.rviz\n'}
+[24.562342] (aqua_robot_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/manasvi3/ros2_ws/install/aqua_robot_gazebo/share/aqua_robot_gazebo/launch/lake_simulation.launch.py\n'}
+[24.562365] (aqua_robot_gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at cmake_install.cmake:56 (file):\n'}
+[24.562404] (aqua_robot_gazebo) StderrLine: {'line': b'  file INSTALL cannot find\n'}
+[24.562595] (aqua_robot_gazebo) StderrLine: {'line': b'  "/home/manasvi3/ros2_ws/src/aqua_robot_gazebo/launch/multi_robot_safe.launch.py":\n'}
+[24.562691] (aqua_robot_gazebo) StderrLine: {'line': b'  No such file or directory.\n'}
+[24.562752] (aqua_robot_gazebo) StderrLine: {'line': b'\n'}
+[24.562811] (aqua_robot_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[24.563759] (aqua_robot_gazebo) CommandEnded: {'returncode': 1}
+[24.568585] (aqua_robot_gazebo) JobEnded: {'identifier': 'aqua_robot_gazebo', 'rc': 1}
+[24.579200] (-) EventReactorShutdown: {}
