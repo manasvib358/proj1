@@ -19,7 +19,7 @@ source install/setup.bash
 Step 3 — Launch
 export LIBGL_ALWAYS_SOFTWARE=1
 export MESA_GL_VERSION_OVERRIDE=3.3
-ros2 launch aqua_robot_gazebo lake_simulation.launch.py
+ros2 launch aqua_robot_gazebo multi_robot_safe.launch.py
 
 export LIBGL_ALWAYS_SOFTWARE=1
 export MESA_GL_VERSION_OVERRIDE=3.3
@@ -38,11 +38,10 @@ You should see ROS topics from your robot.
 opening world sdf file
 nano ~/ros2_ws/src/aqua_robot_gazebo/worlds/lake_waste.world
 opening robot sdf
-nano ~/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation.launch.py
+nano ~/ros2_ws/src/aqua_robot_gazebo/launch/multi_robot_safe.launch.py
 opening robot urdf file
-nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot.urdf
+nano ~/ros2_ws/src/aqua_robot_gazebo/urdf/aqua_robot_multi.urdf.xacro
 
-nano ~/ros2_ws/src/aqua_robot_gazebo/launch/lake_simulation_asv.launch.py
 
 if camera not working try this
 camera setup 
@@ -69,10 +68,10 @@ movement
 launch gazebo 
 then
 ros2 run teleop_twist_keyboard teleop_twist_keyboard \
---ros-args -r cmd_vel:=/aqua_robot/cmd_vel
+--ros-args -r cmd_vel:=/aqua_robot_/cmd_vel
 
 dierc
-ros2 topic echo /aqua_robot/cmd_vel
+ros2 topic echo /aqua_robot_/cmd_vel
 
 
 camera testing 
@@ -85,18 +84,18 @@ check IMU topic
 source ~/ros2_ws/install/setup.bash
 ros2 topic list | grep imu
 check IMU data
-ros2 topic echo /aqua_robot/imu_plugin/out
+ros2 topic echo /aqua_robot_3/imu_plugin/out
 
 GPS testing
 launch gazebo then
 source ~/ros2_ws/install/setup.bash
 ros2 topic list | grep gps
 Run:for data
-ros2 topic echo /aqua_robot/gps_plugin/out
+ros2 topic echo /aqua_robot_3/gps_plugin/out
 
 LIDAR 
 check topic
 source ~/ros2_ws/install/setup.bash
 ros2 topic list | grep laser
 check data
-ros2 topic echo /aqua_robot/laser_controller/out --once
+ros2 topic echo /aqua_robot_3/laser_controller/out --once
