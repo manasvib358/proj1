@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000770] (-) JobUnselected: {'identifier': 'aqua_robot_gazebo'}
-[0.000841] (-) JobUnselected: {'identifier': 'my_robot_description'}
-[0.000875] (-) JobUnselected: {'identifier': 'ros2_fundamentals_examples'}
-[0.001415] (-) EventReactorShutdown: {}

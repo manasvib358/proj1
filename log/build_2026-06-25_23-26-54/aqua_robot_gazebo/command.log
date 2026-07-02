@@ -1,2 +1,0 @@
-Invoking command in '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manasvi3/ros2_ws/src/aqua_robot_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/manasvi3/ros2_ws/install/aqua_robot_gazebo
-Invoked command in '/home/manasvi3/ros2_ws/build/aqua_robot_gazebo' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manasvi3/ros2_ws/src/aqua_robot_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/manasvi3/ros2_ws/install/aqua_robot_gazebo

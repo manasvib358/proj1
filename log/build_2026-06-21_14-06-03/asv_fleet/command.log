@@ -1,4 +1,0 @@
-Invoking command in '/home/manasvi3/ros2_ws/build/asv_fleet': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manasvi3/ros2_ws/build/asv_fleet -- -j14 -l14
-Invoked command in '/home/manasvi3/ros2_ws/build/asv_fleet' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manasvi3/ros2_ws/build/asv_fleet -- -j14 -l14
-Invoking command in '/home/manasvi3/ros2_ws/build/asv_fleet': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manasvi3/ros2_ws/build/asv_fleet
-Invoked command in '/home/manasvi3/ros2_ws/build/asv_fleet' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manasvi3/ros2_ws/build/asv_fleet

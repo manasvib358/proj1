@@ -1,1 +1,0 @@
-/home/manasvi3/ros2_ws/src/my_robot_description/launch/gazebo.launch.py

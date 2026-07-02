@@ -1,1 +1,0 @@
-/home/manasvi3/ros2_ws/build/ros2_fundamentals_examples/ament_cmake_core/ros2_fundamentals_examplesConfig-version.cmake

@@ -1,1 +1,0 @@
-/home/manasvi3/ros2_ws/src/asv_fleet/launch/spawn_single_asv.launch.py
