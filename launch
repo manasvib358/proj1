@@ -12,6 +12,9 @@ editing file
 Launching Gazebo and rviz
 Step 1 — Remove the duplicate (keep only the one directly in src/)
 rm -rf ~/ros2_ws/src/aqua_waste_robot
+pkill -9 gzserver
+pkill -9 gzclient
+pkill -9 gazebo
 Step 2 — Build now
 cd ~/ros2_ws
 colcon build --packages-select aqua_robot_gazebo
