@@ -99,3 +99,30 @@ source ~/ros2_ws/install/setup.bash
 ros2 topic list | grep laser
 check data
 ros2 topic echo /aqua_robot_3/laser_controller/out --once
+
+
+<gazebo reference="camera_link">
+    <sensor type="camera" name="waste_camera">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>1280</width>
+          <height>720</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>50</far>
+        </clip>
+      </camera>
+      <plugin name="$(arg robot_ns)_camera_controller"
+        filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>30.0</updateRate>
+
+        <frameName>camera_link</frameName>
+      </plugin>
+    </sensor>
+    <material>Gazebo/Orange</material>
+  </gazebo>
