@@ -104,6 +104,38 @@ check data
 ros2 topic echo /aqua_robot_3/laser_controller/out --once
 verifying all 360 rays
 nano scan_dump.py
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import LaserScan
+
+class ScanDump(Node):
+    def __init__(self):
+        super().__init__('scan_dump')
+        self.create_subscription(
+            LaserScan,
+            '/aqua_robot_2/laser_controller/out',  # Change robot number if needed
+            self.callback,
+            10
+        )
+
+    def callback(self, msg):
+        print("Number of beams:", len(msg.ranges))
+
+        for i, r in enumerate(msg.ranges):
+            print(f"{i:3d}: {r}")
+
+        rclpy.shutdown()
+
+def main():
+    rclpy.init()
+    node = ScanDump()
+    rclpy.spin(node)
+
+if __name__ == '__main__':
+    main()
+
 chmod +x ~/ros2_ws/src/aqua_robot_gazebo/scripts/scan_dump.py
 python3 ~/ros2_ws/src/aqua_robot_gazebo/scripts/scan_dump.py
 
