@@ -102,6 +102,10 @@ source ~/ros2_ws/install/setup.bash
 ros2 topic list | grep laser
 check data
 ros2 topic echo /aqua_robot_3/laser_controller/out --once
+verifying all 360 rays
+nano scan_dump.py
+chmod +x ~/ros2_ws/src/aqua_robot_gazebo/scripts/scan_dump.py
+python3 ~/ros2_ws/src/aqua_robot_gazebo/scripts/scan_dump.py
 
 
 <gazebo reference="camera_link">
