@@ -14,7 +14,6 @@ def generate_launch_description():
     pkg_share = get_package_share_directory('aqua_robot_gazebo')
 
     world = os.path.join(pkg_share, 'worlds', 'lake_waste.world')
-
     xacro_file = os.path.join(
         pkg_share,
         'urdf',
