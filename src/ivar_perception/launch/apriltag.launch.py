@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
-# ── ROS2 Launch imports ───────────────────────────────────────────────────────
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration ,PathJoinSubstitution
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 import os
@@ -20,19 +19,12 @@ def generate_launch_description():
         ros2 launch ivar_perception apriltag.launch.py robot_id:=robot2
     """
 
-    # ── Package path ──────────────────────────────────────────────────────────
-    # get_package_share_directory finds the installed package location
-    # This is where config/apriltag.yaml gets installed after colcon build
     pkg_path = get_package_share_directory('ivar_perception')
-    config_file = os.path.join(pkg_path, 'config', 'apriltag.yaml')
-
-    # ── Launch Arguments ──────────────────────────────────────────────────────
-    # These are arguments you can pass from the command line
-    # e.g. ros2 launch ivar_perception apriltag.launch.py robot_id:=robot2
+    config_file = os.path.join(pkg_path, 'config', 'tags.yaml')
 
     robot_id_arg = DeclareLaunchArgument(
         'robot_id',
-        default_value='robot1',
+        default_value='aqua_robot_1',
         description='Robot identifier for multi-robot deployment'
     )
 
@@ -42,13 +34,15 @@ def generate_launch_description():
         description='Camera frame name from URDF'
     )
 
-    # ── Nodes ─────────────────────────────────────────────────────────────────
+    robot_id = LaunchConfiguration('robot_id')
+
 
     # Node 1 — AprilTag detector
     apriltag_node = Node(
         package='ivar_perception',
         executable='apriltag_node',
         name='apriltag_node',
+        namespace = robot_id,
         # parameters loads config from yaml file
         # overrides defaults declared in the node
         parameters=[config_file],
@@ -56,18 +50,19 @@ def generate_launch_description():
         # left side = node's internal topic name
         # right side = actual topic published by camera/Gazebo
         remappings=[
-            ('image_rect',   '/camera/image_raw'),
-            ('camera_info',  '/camera/camera_info'),
-            ('detections',   '/detections'),
+            ('image_rect',  PathJoinSubstitution(['/' , robot_id , 'waste_camera' , 'image_raw'])),
+            ('camera_info', PathJoinSubstitution(['/' , robot_id , 'waste_camera' , 'camera_info'])),
+            ('detections',  PathJoinSubstitution(['/' , robot_id , 'detections'])),
         ],
         output='screen'  # print logs to terminal
     )
 
-    # Node 2 — Pose estimator
-    pose_estimator_node = Node(
+    # Node 2 — Pose transformer
+    pose_transformer_node = Node(
         package='ivar_perception',
         executable='pose_transformer',
         name='pose_transformer',
+        namespace = robot_id , 
         parameters=[
             config_file,
             # Override robot_id with command line argument
@@ -76,8 +71,8 @@ def generate_launch_description():
             {'camera_frame': LaunchConfiguration('camera_frame')},
         ],
         remappings=[
-            ('detections',    '/detections'),
-            ('tag_poses_map', '/tag_poses_map'),
+            ('detections',   PathJoinSubstitution(['/' , robot_id , 'detections'])),
+            ('tag_poses_map', PathJoinSubstitution(['/' , robot_id , 'tag_poses_map'])),
         ],
         output='screen'
     )
@@ -88,5 +83,5 @@ def generate_launch_description():
         robot_id_arg,
         camera_frame_arg,
         apriltag_node,
-        pose_estimator_node,
+        pose_transformer_node,
     ])

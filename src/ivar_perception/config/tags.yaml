@@ -1,12 +1,11 @@
 # ── AprilTag Node Parameters ──────────────────────────────────────────────────
 apriltag_node:
   ros__parameters:
-    # Tag family — must match the physical tags used on waste objects
+    # Tag family 
     family: "tag36h11"
 
     # Physical size of the tag in metres
-    # Measure your printed tag's black border edge to edge
-    size: 0.15
+    size: 0.4
 
     # Max corrected bit errors allowed (0 = strictest, most reliable)
     max_hamming: 0
@@ -14,8 +13,8 @@ apriltag_node:
     # Print timing/profiling info (set true only for debugging)
     profile: false
 
-# ── Pose Estimator Parameters ───────────────────────────────────────────────
-pose_estimator:
+# ── Pose Transformer Parameters ───────────────────────────────────────────────
+pose_transformer:
   ros__parameters:
     # Must match camera link name in URDF exactly
     camera_frame: "camera_link"
@@ -25,4 +24,4 @@ pose_estimator:
 
     # Robot identifier — change per robot in multi-robot deployment
     # robot1, robot2, robot3
-    robot_id: "robot1"
+    robot_id: "aqua_robot_1"
